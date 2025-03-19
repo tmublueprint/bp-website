@@ -13,8 +13,10 @@
     "test-storybook": "test-storybook"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
