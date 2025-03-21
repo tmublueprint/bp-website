@@ -1,6 +1,8 @@
 // Implement the NavBar component
 // Reference Zeplin General Page for the design specs
-// Each button should be a link to the respective page
+// Requirement:
+// - Each button should be a link to the respective page
+// - Make header stick to top
 
 function NavBar() {
     // Code goes here
