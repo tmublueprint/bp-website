@@ -1,3 +1,12 @@
+// Home page
+// should include these components:
+// - NavBar
+// - WelcomeCard
+// - WorkCarouselCard 
+// - ValuesCard
+// - StudentInvolvementCard
+// - Footer
+
 function HomePage() {
     return (
         <>
