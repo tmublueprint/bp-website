@@ -12,10 +12,7 @@ import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCar
 function HomePage() {
     return (
         <>
-            {/* Hello this is the home page */}
-            <div>
-                <StudentInvolvementCard></StudentInvolvementCard>
-            </div>
+            <StudentInvolvementCard></StudentInvolvementCard>
         </>
         
     )
