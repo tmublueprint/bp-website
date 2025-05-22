@@ -7,11 +7,17 @@
 // - StudentInvolvementCard
 // - Footer
 
+import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
+
 function HomePage() {
     return (
         <>
-            Hello this is the home page
+            {/* Hello this is the home page */}
+            <div>
+                <StudentInvolvementCard></StudentInvolvementCard>
+            </div>
         </>
+        
     )
 }
 
