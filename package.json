@@ -13,6 +13,7 @@
     "test-storybook": "test-storybook"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.2.6",
     "@types/react-router-dom": "^5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
