@@ -14,7 +14,7 @@ function StudentInvolvementCard() {
             <div>
                 <a id="stdInvolv-link" href="/StudentPage">
                     <p id="stdInvolv-link-text">Students</p>
-                    <img src={NorthEastArrow} alt="arrow" className="north-east-arrow"/>
+                    <img src={NorthEastArrow} alt="arrow" className="north-east-arrow" />
                 </a>
             </div>
         </div>

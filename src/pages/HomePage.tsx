@@ -8,13 +8,15 @@
 // - Footer
 
 import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
+import ValuesCard from "../components/HomePage/ValuesCard";
 
 function HomePage() {
     return (
         <>
-            <StudentInvolvementCard></StudentInvolvementCard>
+            <ValuesCard />
+            {/*<StudentInvolvementCard></StudentInvolvementCard>*/}
         </>
-        
+
     )
 }
 

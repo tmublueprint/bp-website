@@ -8,8 +8,58 @@ function ValuesCard() {
     // Code goes here
 
     return (
-        <>
-        </>
+        <div className="flex flex-col gap-4 m-4">
+            <div className="flex justify-center">
+                <h1 className="text-5xl font-bold">Our Values</h1>
+            </div>
+            <div className="flex justify-center">
+                <div className="Vector flex flex-col gap-4 rounded-2xl">
+                    <div className="">
+                        <img src="Light bulb vector.svg" alt="Light bulb icon" />
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold">Innovation</h1>
+                    </div>
+                    <div>
+                        <span className="font-medium">
+                            At Blueprint, we focus on using technology to solve real problems.
+                            Through innovation, we create new solutions that make a positive impact.
+                            We constantly look for ways to improve and push the limits of what technology can do for people.
+                        </span>
+                    </div>
+                </div>
+                <div className="Vector flex flex-col gap-4 rounded-2xl">
+                    <div className="">
+                        <img src="Heart vector.svg" alt="Heart icon" />
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold">Community</h1>
+                    </div>
+                    <div>
+                        <span className="font-medium">
+                            We believe technology should be for everyone.
+                            With community and inclusion, we make sure that all people have access to the benefits of technology,
+                            no matter who they are or where they come from. We work to create equal opportunities in everything we do.
+                        </span>
+                    </div>
+                </div>
+                <div className="Vector flex flex-col gap-4 rounded-2xl">
+                    <div className="">
+                        <img src="Balance vector.svg" alt="Balance icon" />
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold">Responsibility</h1>
+                    </div>
+                    <div>
+                        <span className="font-medium">
+                            We take responsibility for the impact of our technology.
+                            Through responsibility and ethics, we make sure our work is fair, honest, and sustainable.
+                            We focus on protecting privacy, and ensuring our technology is used in ways that benefit everyone.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
