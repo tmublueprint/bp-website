@@ -11,10 +11,10 @@
 }
 
 .Vector {
-    width: 356.7px;
-    height: 403.8px;
+    width: 450px;
+    height: 500px;
     flex-grow: 0;
-    margin: 41.2px 80.7px 113.3px 24.3px;
+    /*margin: 41.2px 80.7px 113.3px 24.3px;*/
     padding: 38.1px 48.7px 29.4px 45.9px;
     opacity: 0.7;
     background-color: #c7e0fb;

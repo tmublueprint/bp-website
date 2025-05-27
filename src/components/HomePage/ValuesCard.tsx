@@ -8,20 +8,20 @@ function ValuesCard() {
     // Code goes here
 
     return (
-        <div className="flex flex-col gap-4 m-4">
+        <div className="flex flex-col m-4 gap-20">
             <div className="flex justify-center">
-                <h1 className="text-5xl font-bold">Our Values</h1>
+                <h1 className="text-6xl font-bold">Our Values</h1>
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-row justify-center gap-6 mx-30">
                 <div className="Vector flex flex-col gap-4 rounded-2xl">
                     <div className="">
                         <img src="Light bulb vector.svg" alt="Light bulb icon" />
                     </div>
                     <div>
-                        <h1 className="text-3xl font-bold">Innovation</h1>
+                        <h1 className="text-4xl font-bold">Innovation</h1>
                     </div>
                     <div>
-                        <span className="font-medium">
+                        <span className="text-2xl font-regular">
                             At Blueprint, we focus on using technology to solve real problems.
                             Through innovation, we create new solutions that make a positive impact.
                             We constantly look for ways to improve and push the limits of what technology can do for people.
@@ -33,10 +33,10 @@ function ValuesCard() {
                         <img src="Heart vector.svg" alt="Heart icon" />
                     </div>
                     <div>
-                        <h1 className="text-3xl font-bold">Community</h1>
+                        <h1 className="text-4xl font-bold">Community</h1>
                     </div>
-                    <div>
-                        <span className="font-medium">
+                    <div className="">
+                        <span className="text-2xl font-regular ">
                             We believe technology should be for everyone.
                             With community and inclusion, we make sure that all people have access to the benefits of technology,
                             no matter who they are or where they come from. We work to create equal opportunities in everything we do.
@@ -48,10 +48,10 @@ function ValuesCard() {
                         <img src="Balance vector.svg" alt="Balance icon" />
                     </div>
                     <div>
-                        <h1 className="text-3xl font-bold">Responsibility</h1>
+                        <h1 className="text-4xl font-bold">Responsibility</h1>
                     </div>
                     <div>
-                        <span className="font-medium">
+                        <span className="text-2xl font-regular">
                             We take responsibility for the impact of our technology.
                             Through responsibility and ethics, we make sure our work is fair, honest, and sustainable.
                             We focus on protecting privacy, and ensuring our technology is used in ways that benefit everyone.
