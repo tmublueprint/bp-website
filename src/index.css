@@ -31,13 +31,35 @@ body {
 }
 
 .Vector {
-    width: 450px;
-    height: 500px;
+    min-height: 400px;
+    max-width: 460px;
     flex-grow: 0;
-    /*margin: 41.2px 80.7px 113.3px 24.3px;*/
-    padding: 38.1px 48.7px 29.4px 45.9px;
+    padding: 3rem 3.5rem;
     opacity: 0.7;
     background-color: #c7e0fb;
+}
+
+/* responsive for different screen sizes */
+@media (min-width: 1280px) {
+    .Vector {
+        max-width: 480px;
+        height: 500px;
+        padding: 3.5rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Vector {
+        padding: 2.5rem 3rem;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .Vector {
+        padding: 2rem 2.5rem;
+        min-height: 300px;
+    }
 }
 
 .Innovation {
