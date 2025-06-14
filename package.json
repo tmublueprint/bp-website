@@ -17,6 +17,7 @@
     "@types/react-router-dom": "^5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.4.0"
   },
   "devDependencies": {
@@ -44,9 +45,9 @@
     "eslint-plugin-storybook": "^0.11.6",
     "globals": "^15.15.0",
     "playwright": "^1.51.1",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.4",
     "storybook": "^8.6.7",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^4.1.8",
     "tsx": "^4.19.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
