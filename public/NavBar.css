@@ -1,0 +1,99 @@
+#navBar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 6.09178744em;
+    font-size: var(--font-size-medium-body);
+}
+
+#navBar-items {
+    margin: auto;
+}
+
+#navBar-items li {
+    display: inline-block;
+    padding: 0px 1.11111111em;
+    color: var(--color-charcoal);
+}
+
+#navBar-button {
+    width: 7.24637681em;
+    height: 1.83574879em;
+    background-color: #0c78ec;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 2.97987246em;
+}
+
+#navBar-button-text {
+    color: white;
+    margin: auto auto auto 0.676328502em;
+    display: inline-block;
+    position: relative;
+}
+
+.white-north-east-arrow {
+    display: inline-block;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(143deg) brightness(109%) contrast(101%); /*Makes it white on the blue background*/
+    margin: 0.144927536em 0.724637681em 0 auto;
+    width: 0.589371981em;
+}
+
+.small-logo {
+    width: 1.76183575em;
+    height: 1.76183575em;
+    margin: 0 0 0 2.59613527em;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 44px;
+    right: 215px;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 8px;
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 0.5rem;
+    min-width: 150px;
+    display: none;
+}
+
+#hamburger-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+#hamburger-button {
+    background: none;
+    border: none;
+    cursor: hand;
+    display: none;
+}
+
+#hamburger-items {
+
+}
+
+@media screen and (max-width: 830px) {
+
+}
+@media screen and (max-width: 850px) {
+    /* #navBar-container { font-size: 16px; } */
+    /* #navBar-container {font-size: 2.43529412vw;} */
+    #hamburger-menu { 
+        display: flex; }
+    #hamburger-button { 
+        display: flex; 
+        margin: 0 3px 0 auto;
+    }
+    #navBar-items { display: none; }
+
+}

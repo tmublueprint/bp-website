@@ -8,10 +8,13 @@
 // - Footer
 
 import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
+import NavBar from "../components/HomePage/NavBar";
+
 
 function HomePage() {
     return (
         <>
+            <NavBar></NavBar>
             <StudentInvolvementCard></StudentInvolvementCard>
         </>
         
