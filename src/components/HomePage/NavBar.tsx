@@ -19,10 +19,11 @@ function NavBar() {
     }
 
     return (
-        <div>
+        <div id="navBar-container">
             <link href="/public/NavBar.css" rel="stylesheet"></link>
             <link href="/src/index.css" rel="stylesheet"></link>
-            <ul id="navBar-container">
+            <div id="navBar-spacer"></div>
+            <ul id="nav-bar">
                 <a id="home-link" href="/">
                     <img src={SmallLogo} alt="arrow" className="small-logo"/>
                 </a>
