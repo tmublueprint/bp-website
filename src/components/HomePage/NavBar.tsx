@@ -22,10 +22,9 @@ function NavBar() {
         <div id="navBar-container">
             <link href="/public/NavBar.css" rel="stylesheet"></link>
             <link href="/src/index.css" rel="stylesheet"></link>
-            <div id="navBar-spacer"></div>
             <ul id="nav-bar">
                 <a id="home-link" href="/">
-                    <img src={SmallLogo} alt="arrow" className="small-logo"/>
+                    <img src={SmallLogo} alt="arrow" className="bp-small-logo"/>
                 </a>
                 <div id="navBar-items">
                     <li><a href="/about">About Us</a></li>
@@ -33,16 +32,17 @@ function NavBar() {
                     <li><a href="/student">Students</a></li>
                     <li><a href="/npo">Non-Profits</a></li>
                 </div>
-                <button id="hamburger-button" onClick={hamburgerClick}>
-                    <img src={HamburgerIcon} alt="hamburger menu" id="hamburger-button"/>
-                </button>
                 <a id="navBar-button" href="/contact">
                     <p id="navBar-button-text">Contact Us</p>
                     <img src={NorthEastArrow} alt="arrow" className="white-north-east-arrow"/>
                 </a>
+                <button id="hamburger-button" onClick={hamburgerClick}>
+                    <img src={HamburgerIcon} alt="hamburger menu" id="hamburger-button"/>
+                </button>
             </ul>
             
             {menuOpen && <div id="hamburger-menu"> {/*Could be a component I suppose*/} 
+                <button onClick={() => setMenuOpen(false)} id="hamburger-close"><img src={CloseIcon} alt="close" id="hamburger-img"/></button>
                 <div id="hamburger-items">
                     <div><a href="/about">About Us</a></div>
                     <div><a href="/project">Projects</a></div>
