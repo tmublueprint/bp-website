@@ -43,9 +43,7 @@ function NavBar() {
             </ul>
             
             {menuOpen && <div id="hamburger-menu"> {/*Could be a component I suppose*/} 
-                <button onClick={() => setMenuOpen(false)} id="hamburger-close"><img src={CloseIcon} alt="close"/></button>
                 <div id="hamburger-items">
-
                     <div><a href="/about">About Us</a></div>
                     <div><a href="/project">Projects</a></div>
                     <div><a href="/student">Students</a></div>

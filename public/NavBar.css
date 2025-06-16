@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 #navBar-spacer {
     /* height: 40px; */
@@ -58,28 +58,11 @@
 }
 
 #hamburger-menu {
-    position: fixed;
-    top: 20px;
-    right: 230px;
-    background: white;
-    border: 1px solid #333;
-    border-radius: 8px;
-    z-index: 1000; /* Ensure it appears above other content */
-    padding: 0.5rem;
+    background: rgb(255, 255, 255);
+    /* border: 1px solid #333; */
     min-width: 150px;
     display: none;
     font-size: 16px;
-}
-
-#hamburger-close {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
 }
 
 #hamburger-button {
@@ -88,10 +71,14 @@
     cursor: hand;
     display: none;
 }
-
-#hamburger-items {
-
+#hamburger-items {width: 100%;}
+#hamburger-items div {width: 100%;}
+#hamburger-items div a {
+    width: 100%;
+    display: block;
+    margin-left: 10px;
 }
+
 
 @media screen and (max-width: 830px) {
 
