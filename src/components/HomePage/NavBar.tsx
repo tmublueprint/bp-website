@@ -4,7 +4,6 @@
 // - Each button should be a link to the respective page
 // - Make header stick to top
 
-import "@fontsource/poppins";
 import NorthEastArrow from '/public/north-east-arrow.svg';
 import SmallLogo from '/public/small-logo.svg';
 import HamburgerIcon from '/public/hamburger-icon.svg';
@@ -20,8 +19,9 @@ function NavBar() {
 
     return (
         <div id="navBar-container">
-            <link href="/public/NavBar.css" rel="stylesheet"></link>
-            <link href="/src/index.css" rel="stylesheet"></link>
+            <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
+            <link href="/public/NavBar.css" rel="stylesheet"/>
+            <link href="/src/index.css" rel="stylesheet"/>
             <ul id="nav-bar">
                 <a id="home-link" href="/">
                     <img src={SmallLogo} alt="arrow" className="bp-small-logo"/>
