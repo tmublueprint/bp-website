@@ -14,7 +14,13 @@
 }
 
 #navBar-items {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    position: absolute;
     margin: auto;
+    white-space: nowrap;
 }
 
 #navBar-items li {
@@ -31,8 +37,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: auto;
     margin-right: 50px;
+    margin-left: auto;
 }
 
 #navBar-button-text {
@@ -40,6 +46,7 @@
     margin: auto auto auto 14px;
     display: inline-block;
     position: relative;
+    white-space: nowrap;
 }
 
 .white-north-east-arrow {
@@ -49,7 +56,7 @@
     width: 16px;
 }
 
-.bp-small-logo {
+#bp-small-logo {
     width: 36.47px;
     height: 36.47px;
     margin: 0 0 0 53.74px;
@@ -64,17 +71,18 @@
 
 #hamburger-items {
     width: 100%;
-    margin: auto;
-    font-size: 40px;
+    margin: 65px 0 0 0;
+    font-size: 25.7px;
 }
 
 #hamburger-items div {width: 100%;}
 
 #hamburger-items div a {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
     color: #2f2f2f;
+    margin-left: 10px;
 }
 
 #hamburger-items div:hover {
@@ -82,14 +90,69 @@
 }
 
 #hamburger-menu { 
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 0;
+    background: white;
+    box-shadow: 2px 0 16px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(-100%);
+    transition: transform 0.05s;
+    pointer-events: none;
+}
+
+#hamburger-menu.open {
+    transform: translateX(0);
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
 }
 
 #hamburger-close {
-    top: 20px;
-    right: 5px;
-    cursor: hand;
     position: absolute;
+    top: 20px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#navBar-bp-full-logo {
+    height: 48px;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    position: absolute;   
+}
+
+@media screen and (max-width: 1030px) {
+    #hamburger-menu { 
+        display: flex;
+    }
+
+    #hamburger-button { 
+        display: flex; 
+        margin: 0 5px 0 30px;
+    }
+
+    #hamburger-img {
+        width: 40px;
+        height: 40px;
+        filter: invert(8%) sepia(60%) saturate(0%) hue-rotate(257deg) brightness(107%) contrast(78%);
+    }
+
+    #navBar-items { display: none; }
+    #navBar-button { margin-right: 10px; }
+    #bp-small-logo { display: none;}
+    #navBar-bp-full-logo { display: flex; }
 }
 
 @media screen and (max-width: 576px) {
@@ -101,8 +164,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        margin-left: auto;
-        margin-right: 50px;
+        margin-right: 10px;
     }
 
     #navBar-button-text {
@@ -120,42 +182,41 @@
         width: 10px;
     }
 
-    .bp-small-logo {
+    #navBar-bp-full-logo {
+        height: 38px;
+    }
+    #hamburger-close {
         width: 30px;
         height: 30px;
-        margin: 0 0 0 25px;
+        top: 12px;
+    }
+    #hamburger-menu {
+        width: 250px;
     }
 
     #hamburger-items {
-        font-size: 30px;
+        margin: 40px 0 0 0;
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width: 892px) {
-    #hamburger-menu { 
-        display: flex; 
-        height: 100%;
-        width: 100%;
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.9); /* Black fallback color */
-        overflow-x: hidden; /* Disable horizontal scroll */
-        transition: 0.5s;
-    }
 
-    #hamburger-button { 
-        display: flex; 
-        margin: 0 5px 0 5px;
+@media screen and (max-width: 415px) {
+    #navBar-bp-full-logo {
+        display: none;
     }
-
-    #hamburger-img {
-        width: 40px;
-        height: 40px;
-        filter: invert(8%) sepia(60%) saturate(0%) hue-rotate(257deg) brightness(107%) contrast(78%);
+    #bp-small-logo {
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1; 
+        position: absolute;
+        margin: auto;
+        top: 25px;
+        height: 30px;
     }
+}
 
-    #navBar-items { display: none; }
-    #navBar-button { margin-right: 0; }
+@media screen and (max-width: 295px) { /* Just in case lol */
+    #bp-small-logo { display: none; }
 }

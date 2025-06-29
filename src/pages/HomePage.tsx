@@ -18,7 +18,6 @@ function HomePage() {
     return (
         <>
             <NavBar></NavBar>
-            <StudentInvolvementCard></StudentInvolvementCard>
             <GenericButton label="Contact Us"/>
             <Card>
                 <p className="text-white text-lg">Testing</p>
@@ -29,7 +28,7 @@ function HomePage() {
 
 
             <ValuesCard />
-            {/*<StudentInvolvementCard></StudentInvolvementCard>*/}
+            <StudentInvolvementCard></StudentInvolvementCard>
         </>
 
     )
