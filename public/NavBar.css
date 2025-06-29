@@ -78,7 +78,7 @@
 #hamburger-items div {width: 100%;}
 
 #hamburger-items div a {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
     color: #2f2f2f;
