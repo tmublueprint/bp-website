@@ -12,14 +12,12 @@ import NavBar from "../components/HomePage/NavBar";
 import ValuesCard from "../components/HomePage/ValuesCard";
 import GenericButton from "../components/GenericButton";
 import Card from "../components/Card";
-import NavBar from "../components/HomePage/NavBar";
 
 
 function HomePage() {
     return (
         <>
             <NavBar></NavBar>
-            <GenericButton label="Contact Us"/>
             <Card>
                 <p className="text-white text-lg">Testing</p>
             </Card>
