@@ -1,7 +1,9 @@
+import QCard from '../../components/StudentPage/QuestionCard';
+
 function StudentPage() {
     return (
         <>
-            this is the student page.
+            <QCard />
         </>
     )
 }
