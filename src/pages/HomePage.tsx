@@ -8,6 +8,7 @@
 // - Footer
 
 import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
+import NavBar from "../components/HomePage/NavBar";
 import ValuesCard from "../components/HomePage/ValuesCard";
 import GenericButton from "../components/GenericButton";
 import Card from "../components/Card";
