@@ -1,4 +1,6 @@
 import LeadershipCard from "../../components/AboutPage/LeadershipCard";
+import FaceCircle from "../../components/FaceCircle";
+
 function AboutPage() {
     const names = [
         "vichekaoeun",
@@ -11,6 +13,7 @@ function AboutPage() {
     
     return (
         <>
+            <FaceCircle />
             <LeadershipCard 
                 name="Zachary Toye-Nakamura"
                 title="Co-president"
