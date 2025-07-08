@@ -1,7 +1,12 @@
+import DevelopmentCard from "../components/NpoPage/DevelopmentCard";
+import NavBar from "../components/HomePage/NavBar";
+
 function NpoPage() {
     return (
         <>
-            this is the npo page.
+            <NavBar />
+            <DevelopmentCard/>
+            
         </>
     )
 }

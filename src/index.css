@@ -23,8 +23,10 @@ body {
 
 :root {
     --font-size-heading: 55.3px;
-    --font-size-medium-body: 17.3px;
+    --font-size-heading2: 27.3px;
+    --font-size-medium-body: 20.7px;
     --font-size-small-body: 17.3px;
+    --font-size-small-body2: 14px;
     --color-light-button: linear-gradient(45deg, rgba(211, 231, 252, 0.6) -7%, rgba(199, 225, 253, 0.68) 9%, rgba(162, 208, 254, 0.91) 59%, #94c9ff 82%);
     --color-dark-button: linear-gradient(45deg, rgba(124, 184, 246, 0.6) -7%, rgba(112, 178, 250, 0.68) 9%, rgba(80, 166, 253, 0.91) 59%, rgb(67, 160, 255) 82%);
     --border-radius-pill-button: 16px;

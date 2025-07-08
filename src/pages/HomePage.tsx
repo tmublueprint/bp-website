@@ -26,7 +26,7 @@ function HomePage() {
 
 
             <ValuesCard />
-            {/*<StudentInvolvementCard></StudentInvolvementCard>*/}
+            <StudentInvolvementCard></StudentInvolvementCard>
         </>
 
     )
