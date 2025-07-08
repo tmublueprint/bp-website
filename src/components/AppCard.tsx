@@ -2,7 +2,9 @@ function AppCard() {
 
     return (
         <div>
-            <div>image 1</div>
+            <div className="flex justify-center p-9">
+                <img className="mx-auto" src="number-list-h.svg" />
+            </div>
             <div className="flex text-center max-w-[1056px] gap-6">
                 <div>
                     <div>
