@@ -13,9 +13,8 @@ const LeadershipCard: React.FC<LeadershipCardProps> = ({ name, title, imageUrl, 
     <div
       className="
     relative
-    w-full
-    max-w-[340px]
-    max-h-[470px]
+    w-[340px]
+    h-[470px]
     aspect-[3/4]
     rounded-3xl
     overflow-hidden
@@ -23,6 +22,8 @@ const LeadershipCard: React.FC<LeadershipCardProps> = ({ name, title, imageUrl, 
     hover:shadow-2xl
     transition-shadow
     duration-300
+    mx-[10px]
+    my-[16px]
   "
       style={{
         backgroundImage: `url(${imageUrl})`,
