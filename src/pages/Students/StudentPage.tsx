@@ -1,3 +1,4 @@
+
 import AppCard from "../../components/AppCard";
 
 function StudentPage() {
