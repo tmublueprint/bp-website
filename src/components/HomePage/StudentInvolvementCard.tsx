@@ -1,7 +1,6 @@
 // The student card component, it has a call to action and links to the students page.
 // Responsiveness is effectively ok until ~260px. This may be improve in the future by either using @media and max-width, and/or css in terms of vh.
 
-import "@fontsource/poppins";
 import NorthEastArrow from '/public/north-east-arrow.svg';
 
 function StudentInvolvementCard() {

@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import "tailwindcss";
 @tailwind utilities;
+
+@font-face {
+    font-family: Poppins;
+    src: url('/public/poppins/Poppins-Regular.ttf');
+}
 
 html, body, #root {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-weight: normal;
 }
 
 .content-wrapper {
@@ -23,11 +28,14 @@ body {
 
 :root {
     --font-size-heading: 55.3px;
-    --font-size-medium-body: 17.3px;
+    --font-size-heading2: 27.3px;
+    --font-size-medium-body: 20.7px;
     --font-size-small-body: 17.3px;
+    --font-size-small-body2: 14px;
     --color-light-button: linear-gradient(45deg, rgba(211, 231, 252, 0.6) -7%, rgba(199, 225, 253, 0.68) 9%, rgba(162, 208, 254, 0.91) 59%, #94c9ff 82%);
     --color-dark-button: linear-gradient(45deg, rgba(124, 184, 246, 0.6) -7%, rgba(112, 178, 250, 0.68) 9%, rgba(80, 166, 253, 0.91) 59%, rgb(67, 160, 255) 82%);
     --border-radius-pill-button: 16px;
+    --color-charcoal: #333;
 }
 
 .Vector {
@@ -67,7 +75,7 @@ body {
     height: 41px;
     flex-grow: 0;
     margin: 9.8px 112px 11.7px 6px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 27.3px;
     font-weight: 600;
     font-stretch: normal;

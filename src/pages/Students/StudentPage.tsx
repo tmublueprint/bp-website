@@ -1,7 +1,10 @@
+
+import AppCard from "../../components/AppCard";
+
 function StudentPage() {
     return (
         <>
-            this is the student page.
+            <AppCard/>
         </>
     )
 }
