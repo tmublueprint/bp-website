@@ -1,0 +1,114 @@
+#devCard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#devCard-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#devCard-list-numbers {
+    width: 66.7px;
+    /* height: 1154.4px; */
+}
+
+#devCard-title {
+    width: 404px;
+    height: 255.3px;
+    margin-right: 26.4px;
+    /* margin-left: auto; */
+    font-size: var(--font-size-heading);
+    font-weight: 600;
+}
+
+#devCard-text {
+    margin: 76px 0 0 50.1px;
+}
+
+#devCard-text li {
+    height: 207.6px;
+    max-width: 500px;
+}
+
+.devCard-body-title {
+    font-size: var(--font-size-heading2);
+    font-weight: bold;
+    margin-top: 6px;
+    /* height: 41px; */
+}
+
+.devCard-body-text {
+    /* min-height: 154px; */
+    max-width: 510.7px;
+    font-size: var(--font-size-small-body);
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    #devCard-title { 
+        font-size: 40px;
+        width: auto;
+    }
+    .devCard-body-text { font-size: var(--font-size-small-body2); }
+    .devCard-body-title { font-size: var(--font-size-medium-body); }
+    #devCard-text {
+        margin: 76px 0 0 30.1px;
+    }
+    #devCard-text {
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #devCard-container {
+        flex-direction: column;        
+    }
+    #devCard-title {
+        height: auto;
+    }
+    #devCard-body {
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 400px) { /* Make everything 35% small than before */
+    #devCard-title { 
+        font-size: 25px;
+        width: auto;
+    }
+    .devCard-body-text { font-size: 8.75px; }
+    .devCard-body-title { font-size: 13px; }
+    #devCard-list-numbers {
+        width: 41.6875px;
+        /* height: 721.5px; */
+    }
+    #devCard-text {
+        margin: 47.5px 0 0 19px;
+    }
+    #devCard-text li {
+        height: 129.75px;
+    }
+}
+
+@media screen and (max-width: 255px) { /* Removes the numbers and unrestricts the height of the text */
+    #devCard-title {
+        font-size: 20px;
+        height: auto;
+        width: auto;
+    }
+    #devCard-list-numbers {
+        display: none;
+    }
+    #devCard-text {
+        margin: 0;
+    }
+    #devCard-text li {
+        height: auto;
+        margin-bottom: 15px;
+    }
+}

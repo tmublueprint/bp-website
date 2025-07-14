@@ -1,7 +1,9 @@
+import FaceCircle from "../../components/FaceCircle";
+
 function AboutPage() {
     return (
         <>
-            this is the about page.
+            <FaceCircle />
         </>
     )
 }
