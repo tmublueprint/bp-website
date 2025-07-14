@@ -26,7 +26,6 @@ function HomePage() {
             <ValuesCard />
             <StudentInvolvementCard></StudentInvolvementCard>
         </>
-
     )
 }
 
