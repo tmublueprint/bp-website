@@ -8,6 +8,7 @@
 // - Footer
 
 import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
+import NavBar from "../components/HomePage/NavBar";
 import ValuesCard from "../components/HomePage/ValuesCard";
 import GenericButton from "../components/GenericButton";
 import Card from "../components/Card";
@@ -16,6 +17,7 @@ import Card from "../components/Card";
 function HomePage() {
     return (
         <>
+            <NavBar></NavBar>
             <Card>
                 <p className="text-white text-lg">Testing</p>
             </Card>
@@ -24,7 +26,6 @@ function HomePage() {
             </Card>
             <ValuesCard />
             <StudentInvolvementCard></StudentInvolvementCard>
-        </> 
 
     )
 }
