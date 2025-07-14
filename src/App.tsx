@@ -6,12 +6,14 @@ import NpoPage from './pages/NpoPage';
 import StudentPage from './pages/Students/StudentPage';
 import ProjectPage from './pages/Projects/ProjectPage';
 import ErrorPage from './pages/ErrorPage';
+import NavBar from './components/HomePage/NavBar';
 import Footer from './components/HomePage/Footer';
 
 function App() {
 
   return (
     <BrowserRouter>
+      <NavBar />
       <div className='content-wrapper'>
         <Routes>
         

@@ -17,7 +17,6 @@ import Card from "../components/Card";
 function HomePage() {
     return (
         <>
-            <NavBar></NavBar>
             <Card>
                 <p className="text-white text-lg">Testing</p>
             </Card>

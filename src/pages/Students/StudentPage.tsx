@@ -1,10 +1,10 @@
+import QCard from '../../components/StudentPage/QuestionCard';
 
-import AppCard from "../../components/AppCard";
 
 function StudentPage() {
     return (
         <>
-            <AppCard/>
+            <QCard />
         </>
     )
 }

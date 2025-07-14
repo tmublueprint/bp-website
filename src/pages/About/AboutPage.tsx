@@ -1,4 +1,3 @@
-
 import LeadershipCard from "../../components/AboutPage/LeadershipCard";
 import FaceCircle from "../../components/FaceCircle";
 
@@ -15,6 +14,18 @@ function AboutPage() {
     return (
         <>
             <FaceCircle />
+            <LeadershipCard 
+                name="Zachary Toye-Nakamura"
+                title="Co-president"
+                imageUrl="zach-pic.png"
+                linkedinUrl={`https://www.linkedin.com/in/${names[1]}`}
+            />
+            <LeadershipCard 
+                name="Vicheka Oeun"
+                title="Co-president"
+                imageUrl="vic-pic.png"
+                linkedinUrl={`https://www.linkedin.com/in/${names[0]}`}
+            />
         </>
     )
 }
