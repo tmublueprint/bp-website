@@ -1,6 +1,17 @@
+
+import LeadershipCard from "../../components/AboutPage/LeadershipCard";
 import FaceCircle from "../../components/FaceCircle";
 
 function AboutPage() {
+    const names = [
+        "vichekaoeun",
+        "zachary-toye-nakamura",
+        "kristina-truong-1kt",
+        "naetri-niranjan",
+        "ammar-ahmad1",
+        "aaishwin-sathisshkumar-87826b2b6"
+    ]
+    
     return (
         <>
             <FaceCircle />
