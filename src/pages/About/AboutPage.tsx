@@ -51,10 +51,11 @@ function AboutPage() {
                     <p id="aboutPage-title-text">Blueprint is a nonprofit that empowers students to build tech for social good. Through projects, mentorship, and events, we strive to create real-world impact.</p>
                 </div>
             </div>
-            <h1 id="aboutPage-cards-title">Our Leadership</h1>
+            <div id="aboutPage-cards-mega-container">
+            <h1 id="aboutPage-cards-title">Our Team</h1>
             <div id="aboutPage-cards-container">
                 {cards}
-            </div>
+            </div></div>
         </div>
     )
 }
