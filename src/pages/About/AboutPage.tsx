@@ -19,10 +19,10 @@ function AboutPage() {
     const people = [
         new Person("Zachary Toye-Nakamura", "Co-president", "zach-pic.png", "zachary-toye-nakamura"),
         new Person("Vicheka Oeun", "Co-president", "vic-pic.png", "vichekaoeun"),
-        new Person("Kristina Truong", "Co-president", "kristina-pic.png", "kristina-truong-1kt"),
-        new Person("Naetri Niranjan", "Co-president", "naetri-pic.png", "naetri-niranjan"),
-        new Person("Ammar Ahmad", "Co-president", "ammar-pic.png", "ammar-ahmad1"),
-        new Person("Aaishwin Sathisshkumar", "Co-president", "aaishwin-pic.png", "aaishwin-sathisshkumar-87826b2b6")
+        new Person("Kristina Truong", "VP of Outreach", "kristina-pic.png", "kristina-truong-1kt"),
+        new Person("Naetri Niranjan", "VP of Design", "naetri-pic.png", "naetri-niranjan"),
+        new Person("Ammar Ahmad", "VP of Operations", "ammar-pic.png", "ammar-ahmad1"),
+        new Person("Aaishwin Sathisshkumar", "VP of Social", "aaishwin-pic.png", "aaishwin-sathisshkumar-87826b2b6")
     ]
 
     const cards = [];
