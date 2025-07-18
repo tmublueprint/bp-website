@@ -1,6 +1,13 @@
 import { useState } from "react";
 
-function QCard() {
+
+interface QCardProps {
+    question?: string;
+    answer?: string;
+    isLast?: boolean;
+}
+
+function QCard({ question, answer, isLast = false }: QCardProps) {
     const [open, setOpen] = useState(false);
 
     function onOpen(openState : boolean){
@@ -8,9 +15,9 @@ function QCard() {
     }
 
     return (
-        <div className="max-w-[1028px] w-full">
+        <div className="max-w-[1028.6px] w-full">
             <div className="flex justify-between">
-                <h1 className="font-['Poppins'] font-semibold text-[23px]">01. Who can apply?</h1>
+                <h1 className="font-['Poppins'] font-bold text-[23.3px] text-[#333333]">{question}</h1>
                 {!open && 
                 (<button onClick={() => onOpen(true)}>
                     <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +28,7 @@ function QCard() {
                 </button>)}
             </div>
             {open && (<div className="flex justify-between mt-4">
-                <p className="font-['Poppins']">Any TMU student, regardless of year, program, or experience level.</p>
+                <p className="font-['Poppins']">{answer}</p>
                 <button className="btn btn-blue" onClick={() => onOpen(false)}>
                     <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.5397 42.5799C33.1561 42.5799 42.573 33.1629 42.573 21.5465C42.573 9.93016 33.1561 0.513184 21.5397 0.513184C9.92332 0.513184 0.506348 9.93016 0.506348 21.5465C0.506348 33.1629 9.92332 42.5799 21.5397 42.5799Z" fill="url(#paint0_linear_83_21)"/>
@@ -40,6 +47,7 @@ function QCard() {
                 </button>
             </div>
             )}
+            {!isLast && <hr className="w-full h-[0.5px] bg-[#b3b3b3] border-none my-6 mx-0" />}
         </div>
     )
 }
