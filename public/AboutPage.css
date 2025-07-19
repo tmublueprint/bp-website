@@ -14,10 +14,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10vh;
 }
 
 #aboutPage-title-container {
-    margin-left: 137px;
+    /*margin-left: 137px; changing to vw for responsiveness*/
+    margin-left: 7vw;
 }
 
 #aboutPage-title {
@@ -74,10 +76,6 @@
     #aboutPage-cards-mega-container {
         text-align: center;
     }
-
-    #aboutPage-cards-container {
-        padding-bottom: 10vh;
-    }
 }
 
 #aboutPage-title-text {
@@ -90,4 +88,20 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+
+#aboutPage-join-card-container {
+    text-align: center;
+    padding-block: 6em;
+    padding-inline: 10%;
+
+    h1 {
+        font-size: var(--font-size-heading);
+        margin-bottom: 2vh;
+    }
+
+    p {
+        margin-bottom: 3vh;
+    }
 }
