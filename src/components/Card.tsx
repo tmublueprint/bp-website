@@ -1,24 +1,34 @@
-function Card({ children }: { children: React.ReactNode }) {
+function Card({ 
+  children, 
+  width = 356, 
+  height = 309 
+}: { 
+  children?: React.ReactNode;
+  width?: number;
+  height?: number;
+}) {
     return (
       <div
         className="
-        w-[80vw] max-w-[356px]
-        h-[60vw] max-h-[309px]
+        w-[80vw] 
+        h-[60vw] 
         mx-6 my-4
-        bg-[#333]
-        opacity-10
-        rounded-2xl
+        bg-[#E6F3FF]
+        rounded-[24px]
         overflow-hidden
         flex
-        items-center
-        justify-center
+        items-start
+        justify-start
         sm:w-[70vw]
         md:w-[60vw]
-        lg:w-[356px]
         sm:h-[50vw]
         md:h-[45vw]
-        lg:h-[309px]
+        shadow-sm
         "
+        style={{
+          maxWidth: `${width}px`,
+          maxHeight: `${height}px`,
+        }}
       >
         {children}
       </div>
@@ -26,4 +36,3 @@ function Card({ children }: { children: React.ReactNode }) {
   }
   
   export default Card;
-  
