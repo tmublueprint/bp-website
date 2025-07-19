@@ -12,7 +12,6 @@ function GenericButton({ label, className = "", style = {} }: GenericButtonProps
                 w-40
                 h-10
                 flex-grow-0
-                ml-36
                 mt-1
                 px-2
                 pt-1
@@ -22,7 +21,7 @@ function GenericButton({ label, className = "", style = {} }: GenericButtonProps
                 rounded
                 text-xl
                 md:w-44
-                md:ml-40
+                mx-auto
                 transition
                 hover:bg-blue-600
                 rounded-full`;

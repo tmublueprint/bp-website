@@ -1,5 +1,7 @@
 import LeadershipCard from "../../components/AboutPage/LeadershipCard";
 import FaceCircle from "../../components/FaceCircle";
+import JoinTeamCard from "../../components/AboutPage/JoinTeamCard";
+
 
 function AboutPage() {
     class Person {
@@ -56,6 +58,10 @@ function AboutPage() {
             <div id="aboutPage-cards-container">
                 {cards}
             </div></div>
+            <div id="aboutPage-join-card-container">
+                <JoinTeamCard />
+            </div>
+
         </div>
     )
 }
