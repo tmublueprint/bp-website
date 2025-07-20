@@ -4,7 +4,7 @@ import ListNumbers from '/public/list-numbers.svg';
 function DevelopmentCard() {
 
     return (
-        <div id="devCard-container">
+        <div id="devCard-container" className='mb-[82.1px]'>
             <link rel="stylesheet" href="/public/DevelopmentCard.css" />
             <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap' />
             <div id="devCard-title">
