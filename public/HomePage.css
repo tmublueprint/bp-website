@@ -1,0 +1,70 @@
+#homePage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(
+        rgba(148, 201, 255, 1) 0%, 
+        rgba(162, 208, 254, 1) 18%, 
+        rgba(199, 225, 253, 1) 53%,
+        rgb(255, 255, 255) 70%
+    );
+}
+#homePage-card-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 80%;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    /* display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 87%;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;   */
+}
+
+#homePage-card-container::-webkit-scrollbar {
+    height: 2px;
+    background: rgb(51, 51, 51, 0.2);
+    /* width: 4px;
+    border-radius: 10px;
+    margin: 4px 50px; */
+}
+#homePage-card-container::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+#homePage-card-container::-webkit-scrollbar-button {
+    display: flex
+}
+
+#homePage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#people-vectors {
+    width: 85vw;
+    height: auto;
+}
+
+#team-callout {
+    width: 60vw;
+    height: auto;
+}

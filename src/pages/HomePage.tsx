@@ -16,16 +16,27 @@ import Card from "../components/Card";
 
 function HomePage() {
     return (
-        <>
-            <Card>
-                <p className="text-white text-lg">Testing</p>
-            </Card>
-            <Card>
-                <img src="public/logo.png" alt="example" className="object-contain w-full h-full" />
-            </Card>
+        <div id="homePage-container">
+            <link href="/public/HomePage.css" rel="stylesheet" />
+            <link href="/src/index.css" rel="stylesheet" />
+            <div id="top-container">
+                <img src="public/people-vectors.svg" id="people-vectors"/>
+                <img src="public/team-callout.svg" id="team-callout"/>
+            </div>
+            <div id="homePage-card-container">
+                <Card>
+                    <p className="text-black text-lg">Testing</p>
+                </Card>
+                <Card>
+                    <img src="public/logo.png" alt="example" className="object-contain w-full h-full" />
+                </Card>
+                <Card>
+                    <p className="text-black text-lg">Testing</p>
+                </Card>
+            </div>
             <ValuesCard />
             <StudentInvolvementCard></StudentInvolvementCard>
-        </>
+        </div>
 
     )
 }

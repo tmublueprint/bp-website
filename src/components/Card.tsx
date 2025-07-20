@@ -1,9 +1,9 @@
 function Card({ children }: { children: React.ReactNode }) {
     return (
       <div
-        className="
+        className=" card
         w-[80vw] max-w-[356px]
-        h-[60vw] max-h-[309px]
+        h-[60hw] max-h-[309px]
         mx-6 my-4
         bg-[#333]
         opacity-10
@@ -18,6 +18,7 @@ function Card({ children }: { children: React.ReactNode }) {
         sm:h-[50vw]
         md:h-[45vw]
         lg:h-[309px]
+        flex-shrink-0
         "
       >
         {children}

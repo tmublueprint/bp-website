@@ -16,7 +16,6 @@ function App() {
       <NavBar />
       <div className='content-wrapper'>
         <Routes>
-        
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/student" element={<StudentPage />} />
