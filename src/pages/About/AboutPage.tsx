@@ -1,5 +1,7 @@
 import LeadershipCard from "../../components/AboutPage/LeadershipCard";
 import FaceCircle from "../../components/FaceCircle";
+import JoinTeamCard from "../../components/AboutPage/JoinTeamCard";
+
 
 function AboutPage() {
     class Person {
@@ -19,10 +21,10 @@ function AboutPage() {
     const people = [
         new Person("Zachary Toye-Nakamura", "Co-president", "zach-pic.png", "zachary-toye-nakamura"),
         new Person("Vicheka Oeun", "Co-president", "vic-pic.png", "vichekaoeun"),
-        new Person("Kristina Truong", "Co-president", "kristina-pic.png", "kristina-truong-1kt"),
-        new Person("Naetri Niranjan", "Co-president", "naetri-pic.png", "naetri-niranjan"),
-        new Person("Ammar Ahmad", "Co-president", "ammar-pic.png", "ammar-ahmad1"),
-        new Person("Aaishwin Sathisshkumar", "Co-president", "aaishwin-pic.png", "aaishwin-sathisshkumar-87826b2b6")
+        new Person("Kristina Truong", "VP of Outreach", "kristina-pic.png", "kristina-truong-1kt"),
+        new Person("Naetri Niranjan", "VP of Design", "naetri-pic.png", "naetri-niranjan"),
+        new Person("Ammar Ahmad", "VP of Operations", "ammar-pic.png", "ammar-ahmad1"),
+        new Person("Aaishwin Sathisshkumar", "VP of Social", "aaishwin-pic.png", "aaishwin-sathisshkumar-87826b2b6")
     ]
 
     const cards = [];
@@ -51,10 +53,15 @@ function AboutPage() {
                     <p id="aboutPage-title-text">Blueprint is a nonprofit that empowers students to build tech for social good. Through projects, mentorship, and events, we strive to create real-world impact.</p>
                 </div>
             </div>
-            <h1 id="aboutPage-cards-title">Our Leadership</h1>
+            <div id="aboutPage-cards-mega-container">
+            <h1 id="aboutPage-cards-title">Our Team</h1>
             <div id="aboutPage-cards-container">
                 {cards}
+            </div></div>
+            <div id="aboutPage-join-card-container">
+                <JoinTeamCard />
             </div>
+
         </div>
     )
 }

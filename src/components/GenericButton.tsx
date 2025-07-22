@@ -1,17 +1,17 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import { CSSProperties } from "react";
 
 type GenericButtonProps = {
     label: string;
-  };
+    className?: string;
+    style?: CSSProperties;
+};
 
-function GenericButton({ label }: GenericButtonProps) {
-    return (
-        <button
-            className="
+function GenericButton({ label, className = "", style = {} }: GenericButtonProps) {
+    const defaultClass = `      
                 w-40
                 h-10
                 flex-grow-0
-                ml-36
                 mt-1
                 px-2
                 pt-1
@@ -21,11 +21,15 @@ function GenericButton({ label }: GenericButtonProps) {
                 rounded
                 text-xl
                 md:w-44
-                md:ml-40
+                mx-auto
                 transition
                 hover:bg-blue-600
-                rounded-full
-            "
+                rounded-full`;
+    
+    return (
+        <button
+            className={`${defaultClass} ${className}`}
+            style={style}
         >
             {label}
             <FiArrowUpRight size={25} className="align-middle inline-block relative top-[-2px] relative left-[5px]" />

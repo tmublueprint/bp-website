@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: Poppins;
+    src: url('/poppins/Poppins-Regular.ttf');
+}
+
 #stdInvolv-center-container {
     margin: auto;
     text-align: center;
     padding: 10px;  
     max-width: 622.7px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     color: #333;
 }
 

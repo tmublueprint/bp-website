@@ -1,6 +1,4 @@
 #aboutPage-cards-container {
-    /* height: auto;
-    width: auto; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,10 +14,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10vh;
 }
 
 #aboutPage-title-container {
-    margin-left: 137px;
+    /*margin-left: 137px; changing to vw for responsiveness*/
+    margin-left: 7vw;
 }
 
 #aboutPage-title {
@@ -38,32 +38,70 @@
     margin-bottom: 35px;
     text-align: left;
     margin: auto;
-    width: 1080px;
+    width: 1060px;
 }
-@media screen and (max-width: 1080px) { 
+
+@media screen and (min-width: 360px) and (max-width: 1080px) { 
+
     #aboutPage-faceCircle-container { 
-        width: 300px;
+        width: 100vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        img {
+            width: 80% !important;
+        }
     }
+
     #aboutPage-title-container {
         margin-left: 0;
+        padding: 10%;
     }
 
+    #aboutPage-cards-title { 
+        width: 100%;
+        padding-block: 0px;
+        text-align: center;
+    }
+
+    #aboutPage-title-container {
+        h1 {
+            text-align: center;
+        }
+        text-align: center;
+    }
+
+    #aboutPage-cards-mega-container {
+        text-align: center;
+    }
 }
-
-
-@media screen and (min-width: 360px) { #aboutPage-cards-title { width: 360px; } }
-@media screen and (min-width: 720px) { #aboutPage-cards-title { width: 720px; } }
-@media screen and (min-width: 1080px) { #aboutPage-cards-title { width: 1080px; } }
-/* @media screen and (min-width: 1440px) { #aboutPage-cards-title { width: 1440px; } } */
-/* @media screen and (min-width: 1800px) { #aboutPage-cards-title { width: 1800px; } } */
-/* @media screen and (min-width: 2160px) { #aboutPage-cards-title { width: 2160px; } } */
-
 
 #aboutPage-title-text {
     font-size: 20px;
     max-width: 423px;
+}
+
+#aboutPage-cards-mega-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+#aboutPage-join-card-container {
+    text-align: center;
+    padding-block: 6em;
+    padding-inline: 10%;
+
+    h1 {
+        font-size: var(--font-size-heading);
+        margin-bottom: 2vh;
+    }
+
+    p {
+        margin-bottom: 3vh;
+    }
 }
