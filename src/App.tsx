@@ -14,7 +14,6 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <div className='content-wrapper'>
         <Routes>
         
           <Route path="/" element={<Home />} />
@@ -25,7 +24,6 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </div>
       {/* <Footer /> */}
     </BrowserRouter>
   )

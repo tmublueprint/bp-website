@@ -33,8 +33,6 @@ function Card({
         rounded-[24px]
         overflow-hidden
         flex
-        items-center
-        justify-center
         shadow-sm
         ${className}
         `}
