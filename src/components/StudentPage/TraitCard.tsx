@@ -59,15 +59,20 @@ function TraitCard() {
   return (
     <div className="mb-[112.3px]">
       <h1 className="font-['Poppins'] font-bold text-[55.3px] text-center mb-12 text-[#333333]">What We Look For</h1>
-      <div className="flex flex-wrap justify-center gap-1">
+      <div className="flex flex-wrap justify-center gap-1 xl:max-w-[1500px] xl:mx-auto">
         {traits.map((trait, index) => (
-          <Card key={index} width={486} height={320}>
+          <Card
+            key={index}
+            className="w-[320px] h-[240px] md:w-[486px] md:h-[320px] xl:h-[380px] xl:w-[540px] 2xl:h-[380px] 2xl:w-[600px]"
+          >
             <div className="pl-[54px] pr-8 py-8 h-full flex flex-col">
-              <img src={trait.icon} alt={trait.title} className="w-12 h-12 mb-1" />
+              <img src={trait.icon} alt={trait.title} className="w-12 h-12 mb-1 xl:w-16 xl:h-16" />
 
-              <h2 className="font-['Poppins'] font-bold text-[28px] text-[#333] mb-4 leading-tight">{trait.title}</h2>
+              <h2 className="font-['Poppins'] font-bold text-[28px] text-[#333] xl:text-[33px] mb-4 leading-tight">
+                {trait.title}
+              </h2>
 
-              <div className="font-['Poppins'] text-[16px] text-[#666] leading-relaxed flex-grow pr-4">
+              <div className="font-['Poppins'] text-[16px] xl:text-[19px] text-[#666] leading-relaxed flex-grow pr-4">
                 {trait.description}
               </div>
             </div>

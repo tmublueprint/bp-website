@@ -39,7 +39,7 @@ function FAQ({
 }: FAQProps) {    
     return (
         <div className={`mb-[120.4px] ${className}`}>
-            <h1 className="font-['Poppins'] font-bold text-[55.3px] text-center text-[#333333] mb-[62.2px]">
+            <h1 className="font-['Poppins'] font-bold text-[55.3px] text-center text-[#333333] mb-[62.2px] xl:text-[70px]">
               {title}
             </h1>
             <div className="flex flex-col gap-6 mt-[11px] items-center">
