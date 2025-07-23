@@ -49,19 +49,14 @@ function ExpertCard() {
       <h1 className="font-['Poppins'] font-bold text-[55.3px] mb-12 text-[#333]">Our Expertise</h1>
       <div className="flex flex-col w-full gap-6">
         {traits.map((trait, index) => (
-          <Card key={index} width={990.9} height="auto" margin="" fullWidth={true} className="items-center justify-center pl-[48px] pr-[65px] py-[45px]">
-            <div className="flex flex-col mx-auto">
+          <Card key={index} width={990.9} height="auto" margin="" fullWidth={true} className="pl-[48px] pr-[63.6px] pb-[35px] pt-[38px]">
+            <div className="flex flex-col">
               <div className="flex gap-5 items-center">
                 <img src={trait.icon || "/placeholder.svg"} alt={trait.title} className="w-12 h-12" />
                 <h2 className="font-['Poppins'] font-bold text-[28px] text-[#333] leading-tight">{trait.title}</h2>
               </div>
               <div 
-                className="font-['Poppins'] text-[17.3px] text-[#333] text-left mt-[12.6px]"
-                style={{
-                  width: '879.3px',
-                  lineHeight: 1.38,
-                  fontWeight: 'normal'
-                }}
+                className="font-['Poppins'] text-[20px] text-[#333] text-left mt-[12.6px]"
               >
                 {trait.description}
               </div>

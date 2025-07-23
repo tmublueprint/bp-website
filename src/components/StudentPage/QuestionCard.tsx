@@ -15,7 +15,7 @@ function QCard({ question, answer, isLast = false }: QCardProps) {
     }
 
     return (
-        <div className="max-w-[1028.6px] w-full">
+        <div className=" w-full">
             <div className="flex justify-between">
                 <h1 className="font-['Poppins'] font-bold text-[23.3px] text-[#333333]">{question}</h1>
                 {!open && 
