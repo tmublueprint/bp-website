@@ -19,22 +19,28 @@
         rgb(255, 255, 255) 70%
     );
 }
+
+#bottom-container {
+    background-image: linear-gradient(
+        rgb(255, 255, 255) 0%,
+        rgba(148, 201, 255, 0.16) 61%,
+        rgba(211, 231, 252, 0.24) 100%
+    );
+    width: 100%;
+}
+
+#homePage-scroll-container {
+    margin: 0 8%;
+}
+
 #homePage-card-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
-    width: 80%;
-    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-
-    /* display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    max-width: 87%;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;   */
+    justify-content: center;
 }
 
 #homePage-card-container::-webkit-scrollbar {
