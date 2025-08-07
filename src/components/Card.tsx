@@ -1,11 +1,13 @@
 function Card({ 
   children, 
   width = 356, 
-  height = 309 
+  height = 309,
+  style
 }: { 
   children?: React.ReactNode;
   width?: number;
   height?: number;
+  style?: React.CSSProperties;
 }) {
     return (
       <div
@@ -30,6 +32,7 @@ function Card({
         style={{
           maxWidth: `${width}px`,
           maxHeight: `${height}px`,
+          ...style
         }}
       >
         {children}

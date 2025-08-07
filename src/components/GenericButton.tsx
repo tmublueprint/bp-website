@@ -28,7 +28,7 @@ function GenericButton({ label, className = "", style = {} }: GenericButtonProps
     
     return (
         <button
-            className={`${defaultClass} ${className}`}
+            className={`${defaultClass}\n${className}`}
             style={style}
         >
             {label}

@@ -2,7 +2,7 @@
     width: 100vw;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
     background: rgb(255, 255, 255);
 }
 
@@ -219,4 +219,37 @@
 
 @media screen and (max-width: 295px) { /* Just in case lol */
     #bp-small-logo { display: none; }
+}
+
+
+@media screen and (min-width: 1800px) {
+    #nav-bar {
+        height: 160px;
+        font-size: 35px;
+    }
+
+    #bp-small-logo {
+        width: 72px;
+        height: 72px;
+    }
+
+    #navBar-button {
+        width: 340px;
+        height: 76px;
+        background-color: #0c78ec;
+        border-radius: 48px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-right: 100px;
+        margin-left: auto;
+    }
+    #navBar-button-text {
+        margin: auto auto auto 28px;
+    }
+
+    .white-north-east-arrow {
+        width: 32px;
+        margin: 0 32px 0 auto;
+    }
 }

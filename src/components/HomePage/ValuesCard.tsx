@@ -1,6 +1,6 @@
 function ValuesCard() {
     return (
-        <div className="flex flex-col m-4 gap-12 lg:gap-20">
+        <div className="flex flex-col mx-4 mt-12 mb-16 gap-8 lg:gap-12">
             <div className="flex mx-auto">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center">Our Values</h1>
             </div>

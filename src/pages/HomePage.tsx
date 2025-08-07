@@ -16,17 +16,6 @@ import Card from "../components/Card";
 import React, { useRef } from "react";
 
 function HomePage() {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const scrollAmount = 150;
-
-    const handleScrollLeft = () => {
-        containerRef.current?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    };
-
-    const handleScrollRight = () => {
-        containerRef.current?.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    };
-
     return (
         <div id="homePage-container">
             <link href="/public/HomePage.css" rel="stylesheet" />
@@ -36,27 +25,56 @@ function HomePage() {
                 <img src="public/team-callout.svg" id="team-callout"/>
             </div>
             <div id="bottom-container">
+                <GenericButton
+                    label="About Us"
+                    style={{ /* Class variables can't override inline thus I'm doing it this way */
+                        background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
+                        color: "black",
+                        width: "150px",
+                        margin: "auto",
+                        marginBottom: "4rem",
+                        display: "block" /* Flex breaks it */
+                    }}
+                />
+
+                <div id="homePage-our-work-header">
+                    <h2 id="homePage-our-work">Our work</h2>
+                    <GenericButton
+                        label=""
+                        style={{
+                            background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
+                            color: "black",
+                            width: "50px",
+                            height: "35px",
+                            top: "7px",
+                            position: "relative",
+                            margin: "auto 0 auto 5px",
+                            padding: "0 8px 0 0",
+                            display: "block" /* Flex breaks it */
+                        }}
+                    />
+                </div>
                 <div id="homePage-scroll-container">
-                    <div id="homePage-card-container" ref={containerRef}>
-                        <Card>
-                            <p className="text-black text-lg">Testing</p>
+                    <div id="homePage-card-container">
+                        <Card
+                            style = {{
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <p className="text-black text-lg">Coming Soon</p>
                         </Card>
                         <Card>
                             <img src="public/logo.png" alt="example" className="object-contain w-full h-full" />
                         </Card>
-                        <Card>
-                            <p className="text-black text-lg">Testing</p>
+                        <Card
+                            style = {{
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <p className="text-black text-lg">Coming Soon</p>
                         </Card>
-                            {/* <Card><p className="text-black text-lg">Testing</p></Card>
-                            <Card><p className="text-black text-lg">Testing</p></Card>
-                            <Card><p className="text-black text-lg">Testing</p></Card>
-                            <Card><p className="text-black text-lg">Testing</p></Card>
-                            <Card><p className="text-black text-lg">Testing</p></Card>
-                            <Card><p className="text-black text-lg">Testing</p></Card> */}
-                    </div>
-                    <div id="arrows-container">
-                        <button className="arrow-button" onClick={handleScrollLeft}>←</button>
-                        <button className="arrow-button" onClick={handleScrollRight}>→</button>
                     </div>
                 </div>
                 <ValuesCard />
