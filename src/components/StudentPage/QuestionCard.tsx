@@ -17,7 +17,7 @@ function QCard({ question, answer, isLast = false }: QCardProps) {
     return (
         <div className=" w-full">
             <div className="flex justify-between">
-                <h1 className="font-['Poppins'] font-bold text-[23.3px] text-[#333333]">{question}</h1>
+                <h1 className="font-['Poppins'] !font-bold text-[23.3px] text-[#333333]">{question}</h1>
                 {!open && 
                 (<button onClick={() => onOpen(true)}>
                     <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -46,18 +46,26 @@ function ExpertCard() {
 
   return (
     <div className="mb-[112.3px]">
-      <h1 className="font-['Poppins'] font-bold text-[55.3px] mb-12 text-[#333]">Our Expertise</h1>
-      <div className="flex flex-col w-full gap-6">
+      <h1 className="font-['Poppins'] font-bold text-[32px] sm:text-[55.3px] mb-8 sm:mb-12 text-[#333]">Our Expertise</h1>
+      <div className="flex flex-col w-full gap-4 sm:gap-6">
         {traits.map((trait, index) => (
-          <Card key={index} width={990.9} height="auto" margin="" fullWidth={true} className="pl-[48px] pr-[63.6px] pb-[35px] pt-[38px]">
+          <Card
+            key={index}
+            fullWidth={true}
+            margin=""
+            className="
+              w-full max-w-[98vw] sm:max-w-none
+              px-4 py-4
+              sm:pl-[48px] sm:pr-[63.6px] sm:pb-[35px] sm:pt-[38px]
+              expertcard-mobile
+            "
+          >
             <div className="flex flex-col">
-              <div className="flex gap-5 items-center">
-                <img src={trait.icon || "/placeholder.svg"} alt={trait.title} className="w-12 h-12" />
-                <h2 className="font-['Poppins'] font-bold text-[28px] text-[#333] leading-tight">{trait.title}</h2>
+              <div className="flex gap-3 sm:gap-5 items-center">
+                <img src={trait.icon || "/placeholder.svg"} alt={trait.title} className="w-9 h-9 sm:w-12 sm:h-12" />
+                <h2 className="font-['Poppins'] font-bold expertcard-title text-[#333] leading-tight">{trait.title}</h2>
               </div>
-              <div 
-                className="font-['Poppins'] text-[20px] text-[#333] text-left mt-[12.6px]"
-              >
+              <div className="font-['Poppins'] expertcard-desc text-[#333] text-left mt-2 sm:mt-[12.6px]">
                 {trait.description}
               </div>
             </div>

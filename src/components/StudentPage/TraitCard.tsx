@@ -58,21 +58,28 @@ function TraitCard() {
 
   return (
     <div className="mb-[112.3px]">
-      <h1 className="font-['Poppins'] font-bold text-[55.3px] text-center mb-12 text-[#333333]">What We Look For</h1>
-      <div className="flex flex-wrap justify-center gap-1 xl:max-w-[1500px] xl:mx-auto">
+      <h1 className="font-['Poppins'] font-bold text-[40px] sm:text-[55.3px] text-center mb-8 sm:mb-12 text-[#333333]">What We Look For</h1>
+      <div className="flex flex-wrap justify-center gap-3 xl:max-w-[1500px] xl:mx-auto">
         {traits.map((trait, index) => (
           <Card
             key={index}
-            className="w-[320px] h-[240px] md:w-[486px] md:h-[320px] xl:h-[380px] xl:w-[540px] 2xl:h-[380px] 2xl:w-[600px]"
+            className="
+              w-full max-w-[340px] h-auto
+              sm:w-[320px] sm:h-[240px] sm:max-w-none
+              md:w-[486px] md:h-[320px]
+              xl:h-[380px] xl:w-[540px]
+              2xl:h-[380px] 2xl:w-[600px]
+              p-4 sm:p-0
+            "
           >
-            <div className="pl-[54px] pr-8 py-8 h-full flex flex-col">
-              <img src={trait.icon} alt={trait.title} className="w-12 h-12 mb-1 xl:w-16 xl:h-16" />
+            <div className="flex flex-col h-full pl-2 pr-2 py-4 sm:pl-[54px] sm:pr-8 sm:py-8">
+              <img src={trait.icon} alt={trait.title} className="w-10 h-10 mb-2 sm:w-12 sm:h-12 sm:mb-1 xl:w-16 xl:h-16" />
 
-              <h2 className="font-['Poppins'] font-bold text-[28px] text-[#333] xl:text-[33px] mb-4 leading-tight">
+              <h2 className="font-['Poppins'] font-bold text-[20px] sm:text-[28px] xl:text-[33px] mb-2 sm:mb-4 leading-tight">
                 {trait.title}
               </h2>
 
-              <div className="font-['Poppins'] text-[16px] xl:text-[19px] text-[#666] leading-relaxed flex-grow pr-4">
+              <div className="font-['Poppins'] text-[15px] sm:text-[16px] xl:text-[19px] text-[#666] leading-relaxed pr-0 sm:pr-4">
                 {trait.description}
               </div>
             </div>

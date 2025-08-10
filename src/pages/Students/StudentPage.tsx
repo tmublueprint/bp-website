@@ -5,7 +5,7 @@ import TraitCard from '../../components/StudentPage/TraitCard';
 
 function StudentPage() {
     return (
-        <div className='flex flex-col ml-[132.7px] mr-[118.7px]'>
+        <div className='flex flex-col ml-[132.7px] mr-[118.7px] small-screen-comp'>
             <StudentHeader />
             <AppCard />
             <TraitCard />
