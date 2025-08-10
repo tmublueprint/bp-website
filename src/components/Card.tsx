@@ -25,6 +25,7 @@ function Card({
         justify-start
         sm:w-[70vw]
         md:w-[60vw]
+        lg:w-[356.7px]
         sm:h-[50vw]
         md:h-[45vw]
         lg:h-[309px]

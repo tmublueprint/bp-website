@@ -224,18 +224,18 @@
 
 @media screen and (min-width: 96rem) {
     #nav-bar {
-        height: 136px;
-        font-size: 30px;
+        height: 120px;
+        font-size: 26px;
     }
 
     #bp-small-logo {
-        width: 61px;
-        height: 61px;
+        width: 55px;
+        height: 55px;
     }
 
     #navBar-button {
-        width: 289px;
-        height: 65px;
+        width: 240px;
+        height: 60px;
         background-color: #0c78ec;
         border-radius: 40px;
         display: flex;
