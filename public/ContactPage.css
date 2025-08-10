@@ -1,0 +1,36 @@
+#contactPage-title {
+    font-size: var(--font-size-heading);
+    font-weight: 600;
+    color: var(--color-charcoal);
+    margin-bottom: 35px;
+    text-align: left;
+    margin: auto;
+    width: 1060px;
+    padding-top: 15vh;
+}
+
+#contactPage-title-text {
+    padding-top: 5vh;
+}
+
+#social-media-container {
+
+}
+
+#instagram, #linkedin {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        margin-right: 5vw;
+        margin-block: 10vh;
+        height: 25vh;
+        width: 25vh;
+        border-radius: 1rem;
+
+        svg {
+            height: 20vh;
+            width: 20vw;
+        }
+    }
+}

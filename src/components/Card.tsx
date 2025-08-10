@@ -1,20 +1,22 @@
 function Card({ 
   children, 
-  width = 356, 
-  height = 309,
-  style
+  margin = "mx-6 my-4",
+  fullWidth = false,
+  className = "",
+  style = {}
 }: { 
   children?: React.ReactNode;
-  width?: number;
-  height?: number;
+  margin?: string;
+  fullWidth?: boolean;
+  className?: string;
   style?: React.CSSProperties;
 }) {
-    return (
-      <div
-        className="
-        w-[80vw] 
-        h-[60vw] 
-        mx-6 my-4
+  const widthClasses = fullWidth ? "w-full" : ""; // optional fallback
+  return (
+    <div
+      className={`
+        ${widthClasses}
+        ${margin}
         bg-[#E6F3FF]
         rounded-[24px]
         overflow-hidden
@@ -28,16 +30,15 @@ function Card({
         lg:h-[309px]
         flex-shrink-0
         shadow-sm
-        "
-        style={{
-          maxWidth: `${width}px`,
-          maxHeight: `${height}px`,
+        ${className}`
+      }
+      style={{
           ...style
-        }}
-      >
-        {children}
-      </div>
-    );
-  }
+      }}
+    >
+      {children}
+    </div>
+  );
+}
   
-  export default Card;
+export default Card;
