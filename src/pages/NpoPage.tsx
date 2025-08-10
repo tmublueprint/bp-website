@@ -30,7 +30,7 @@ const customFAQs = [
 
 function NpoPage() {
     return (
-        <div className='flex flex-col ml-[132.7px] mr-[155.3px]'>
+        <div className='flex flex-col ml-[132.7px] mr-[155.3px] small-screen-comp'>
             <NpoHeader />
             <ExpertCard />
             <DevelopmentCard/>

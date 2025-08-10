@@ -280,3 +280,92 @@ body {
 .nav-group a:hover {
   color: #193E8D;
 }
+
+@media (max-width: 640px) {
+    .small-screen-comp{
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .student-header-small{
+      font-size: 17px;
+    }
+    .num-list-small{
+      width: 100%;
+      height: auto;
+    }
+    .appheader-small{
+      font-size: 50px;
+    }
+    .appheader-small-body-h1{
+      font-size: 22px
+    }
+}
+
+.trait-card-mobile {
+  padding: 1.25rem 1rem;
+}
+.trait-card-mobile h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.trait-card-mobile img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.trait-card-mobile .trait-desc {
+  font-size: 0.95rem;
+}
+@media (min-width: 640px) {
+  .trait-card-mobile {
+    padding: 2rem 2rem;
+  }
+  .trait-card-mobile h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .trait-card-mobile img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .trait-card-mobile .trait-desc {
+    font-size: 1.05rem;
+  }
+}
+@media (min-width: 1280px) {
+  .trait-card-mobile {
+    padding: 2.5rem 2.5rem;
+  }
+  .trait-card-mobile h2 {
+    font-size: 1.75rem;
+  }
+  .trait-card-mobile .trait-desc {
+    font-size: 1.15rem;
+  }
+}
+
+.expertcard-title {
+  font-size: 2rem; 
+  font-weight: 700;
+  line-height: 1.2;
+}
+.expertcard-desc {
+  font-size: 1.15rem; 
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+@media (max-width: 640px) {
+  .expertcard-title {
+    font-size: 1.15rem;
+  }
+  .expertcard-desc {
+    font-size: 0.85rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
