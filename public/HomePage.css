@@ -1,0 +1,120 @@
+#homePage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(
+        rgba(148, 201, 255, 1) 0%, 
+        rgba(162, 208, 254, 1) 18%, 
+        rgba(199, 225, 253, 1) 53%,
+        rgb(255, 255, 255) 70%
+    );
+}
+
+#bottom-container {
+    background-image: linear-gradient(
+        rgb(255, 255, 255) 0%,
+        rgba(148, 201, 255, 0.16) 61%,
+        rgba(211, 231, 252, 0.24) 100%
+    );
+    width: 100%;
+}
+
+#homePage-scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    justify-content: center;
+    margin: 0 8%;
+    height: 400px;
+}
+
+#homePage-scroll-container::-webkit-scrollbar {
+    height: 2px;
+    background: rgb(51, 51, 51, 0.2);
+    width: 4px;
+    border-radius: 10px;
+    margin: 4px 50px;
+}
+
+#homePage-scroll-container::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+#homePage-scroll-container::-webkit-scrollbar-button {
+    display: flex
+}
+
+#homePage-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#homePage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#people-vectors {
+    width: 85vw;
+    height: auto;
+}
+
+#team-callout {
+    width: 60vw;
+    height: auto;
+}
+
+#homePage-project-button {
+    margin: auto 0 auto 5px;
+    display: block;
+}
+
+
+#homePage-our-work-header {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+#homePage-our-work {
+    font-size: 60px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+@media (min-width: 96rem) { /* 2xl size */
+    #homePage-our-work {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 64rem ) { /* l size */
+    #homePage-our-work {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 40rem) { /* s size */
+    #homePage-our-work {
+        font-size: 36px;
+    }
+}
