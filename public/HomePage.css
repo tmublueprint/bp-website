@@ -81,6 +81,11 @@
     height: auto;
 }
 
+#homePage-project-button {
+    margin: auto 0 auto 5px;
+    display: block;
+}
+
 
 #homePage-our-work-header {
     display: flex;
@@ -91,7 +96,25 @@
 }
 
 #homePage-our-work {
-    font-size: var(--font-size-heading);
+    font-size: 60px;
     font-weight: 600;
     margin-right: 10px;
+}
+
+@media (min-width: 96rem) { /* 2xl size */
+    #homePage-our-work {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 64rem ) { /* l size */
+    #homePage-our-work {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 40rem) { /* s size */
+    #homePage-our-work {
+        font-size: 36px;
+    }
 }

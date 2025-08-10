@@ -2,7 +2,7 @@ function ValuesCard() {
     return (
         <div className="flex flex-col mx-4 mt-12 mb-16 gap-8 lg:gap-12">
             <div className="flex mx-auto">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center">Our Values</h1>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-[70px] font-bold text-center">Our Values</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-6 lg:flex-nowrap lg:max-w-7xl lg:mx-auto">
                 <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-96 xl:w-[440px]">

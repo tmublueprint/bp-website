@@ -25,7 +25,7 @@ function HomePage() {
                 <img src="public/team-callout.svg" id="team-callout"/>
             </div>
             <div id="bottom-container">
-                <GenericButton
+                <a href="/about"><GenericButton
                     label="About Us"
                     style={{ /* Class variables can't override inline thus I'm doing it this way */
                         background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
@@ -35,24 +35,22 @@ function HomePage() {
                         marginBottom: "4rem",
                         display: "block" /* Flex breaks it */
                     }}
-                />
+                /></a>
 
                 <div id="homePage-our-work-header">
                     <h2 id="homePage-our-work">Our work</h2>
-                    <GenericButton
+                    <a href="/project" id="homePage-project-button"><GenericButton
                         label=""
                         style={{
                             background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
                             color: "black",
                             width: "50px",
                             height: "35px",
-                            top: "7px",
                             position: "relative",
-                            margin: "auto 0 auto 5px",
-                            padding: "0 8px 0 0",
-                            display: "block" /* Flex breaks it */
+                            padding: "0 8px 0 0"
+                             /* Flex breaks it */
                         }}
-                    />
+                    /></a>
                 </div>
                 <div id="homePage-scroll-container">
                     <div id="homePage-card-container">
