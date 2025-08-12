@@ -4,21 +4,24 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 function ContactPage() {
     return (
         <div className='ml-[132.7px] mr-[155.3px] small-screen-comp'>
-            <link href="/public/ContactPage.css" rel="stylesheet"/>
-            <div id="contactPage-title-container">
-                <h1 id="contactPage-title">Contact Us</h1>
-                <p id="contactPage-title-text">Contact us at tmublueprint@gmail.com or by reaching out on our social media pages!</p>
-                
-                <div id="social-media-container">
-                    <div id="instagram">
-                        <a href="https://www.linkedin.com/company/tmu-blueprint/" className="social-icon"><FaLinkedin /></a>
-                        <a href="https://www.instagram.com/tmublueprint/" className="social-icon"><FaInstagram /></a>
-                    </div>
-                    <div id="linkedin">
-
+                <h1 className="font-['Poppins'] font-bold text-[55.3px] text-[#333] mb-[52.6px] mt-[102px]">Contact Us</h1>
+                <div>
+                    <h2 className="font-['Poppins'] font-bold text-[35px] text-[#333] mb-[32px]">Email us</h2>
+                    <span className="font-['Poppins'] text-[20px] mb-[30px] text-[#333]">Got a question? Our team will get back to you as soon as we can. Reach out for inquiries, nonprofit collaborations, student opportunities,
+                         partnership ideas, or if you’re interested in applying for a position.
+                    </span>
+                    <div className="mb-[101px]">
+                        <img />
+                        <p>tmublueprint@gmail.com</p>
                     </div>
                 </div>
-            </div>
+                <div>
+                    <h2 className="font-['Poppins'] font-bold text-[35px] text-[#333] mb-[32px]">Follow us</h2>
+                    <span className="font-['Poppins'] text-[20px] mb-[30px] text-[#333]">Follow us on Instagram, LinkedIn, YouTube, and GitHub to stay in the loop about new projects, hiring openings, and behind-the-scenes work.
+                         See what we’re building, get updates first, and be part of our journey!
+                    </span>
+                    <div></div>
+                </div>
         </div>
     )
 }
