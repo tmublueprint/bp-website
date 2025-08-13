@@ -10,7 +10,7 @@ function ContactPage() {
                     <span className="font-['Poppins'] text-[20px] mb-[30px] text-[#333]">Got a question? Our team will get back to you as soon as we can. Reach out for inquiries, nonprofit collaborations, student opportunities,
                          partnership ideas, or if you’re interested in applying for a position.
                     </span>
-                    <div className="mb-[101px] flex gap-[34.7px] mt-[30px] items-center">
+                    <div className="contact-small mb-[101px] flex gap-[34.7px] mt-[30px] items-center">
                         <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_31_266)">
                         <path opacity="0.6" d="M31.3347 0.839344L28.8436 2.73495L17.5623 11.3107C17.1583 11.614 16.5748 11.614 16.1708 11.3107L4.88949 2.73495L2.39832 0.839344C2.90703 0.54363 3.49803 0.384399 4.11147 0.384399H29.6216C30.235 0.384399 30.826 0.551213 31.3347 0.839344ZM32.8534 2.62879L30.7811 4.20594L18.9537 13.1987C18.3403 13.6688 17.5997 13.9038 16.8665 13.9038C16.1334 13.9038 15.3928 13.6688 14.7793 13.1987L2.95191 4.20594L0.879685 2.62879C0.715103 3.03066 0.632812 3.46286 0.632812 3.91022V20.3641C0.632812 22.3052 2.19634 23.8899 4.11147 23.8899H29.6216C31.5367 23.8899 33.1002 22.3052 33.1002 20.3641V3.91022C33.1002 3.46286 33.0179 3.03066 32.8534 2.62879Z" fill="url(#paint0_linear_31_266)"/>

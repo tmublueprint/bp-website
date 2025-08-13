@@ -369,3 +369,9 @@ body {
     padding-bottom: 0.75rem;
   }
 }
+
+@media (max-width: 640px) {
+  .contact-small{
+    margin-bottom: 40px;
+  }
+}
