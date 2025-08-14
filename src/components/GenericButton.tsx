@@ -9,22 +9,25 @@ type GenericButtonProps = {
 
 function GenericButton({ label, className = "", style = {} }: GenericButtonProps) {
     const defaultClass = `      
-                w-40
+                min-w-40
                 h-10
+                flex
+                items-center
+                justify-center
+                gap-2
                 flex-grow-0
                 mt-1
-                px-2
+                px-4
                 pt-1
                 pb-1
                 bg-[#0c78ec]
                 text-white
-                rounded
+                rounded-full
                 text-xl
-                md:w-44
+                md:min-w-44
                 mx-auto
                 transition
-                hover:bg-blue-600
-                rounded-full`;
+                hover:bg-blue-600`;
     
     return (
         <button
@@ -32,7 +35,7 @@ function GenericButton({ label, className = "", style = {} }: GenericButtonProps
             style={style}
         >
             {label}
-            <FiArrowUpRight size={25} className="align-middle inline-block relative top-[-2px] relative left-[5px]" />
+            <FiArrowUpRight size={20} />
         </button>
     );
 }

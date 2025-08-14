@@ -15,7 +15,7 @@
 #projectPage-header {
     margin-left: 10vw;
     margin-right: 20vw;
-    margin-top: 3vw;
+    margin-top: 96.8px;
 }
 
 #projectPage-header-text {
@@ -25,12 +25,14 @@
 }
 
 #projectPage-header-body {
-    font-size: var(--font-size-body);
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 45.9px;
 }
 
 #projectPage-2025-6 {
     margin-left: 10vw;
-    margin-top: 220px;
+    margin-top: 142.2px;
 }
 
 #projectPage-2025-6-h {
@@ -45,5 +47,6 @@
     height: 200px;
     text-align: center;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 55.3px;
+    color: #333;
 }
