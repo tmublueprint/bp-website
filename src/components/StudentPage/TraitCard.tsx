@@ -13,9 +13,9 @@ function TraitCard() {
       description: (
         <>
           A strong passion for using technology to create meaningful change and support nonprofits. We look for applicants who{' '}
-          <span className="bg-blue-200 px-1 rounded">genuinely care about social impact</span>{' '}
+          <span className="bg-blue-200 px-1 rounded-xl">genuinely care about social impact</span>{' '}
           and want to{' '}
-          <span className="bg-blue-200 px-1 rounded">contribute to something bigger</span>.
+          <span className="bg-blue-200 px-1 rounded-xl">contribute to something bigger</span>.
         </>
       ),
     },
@@ -25,7 +25,7 @@ function TraitCard() {
       description:
         <>
             The{' '}
-            <span className="bg-blue-200 px-1 rounded">necessary experience and knowledge for the role,</span>{' '}
+            <span className="bg-blue-200 px-1 rounded-xl">necessary experience and knowledge for the role,</span>{' '}
             whether it's software development, project management, or design. While expertise is great, we also value
             a willingness to learn and grow.
         </>
@@ -36,7 +36,7 @@ function TraitCard() {
       description: (
         <>
           The ability to{' '}
-          <span className="bg-blue-200 px-1 rounded">collaborate effectively,
+          <span className="bg-blue-200 px-1 rounded-xl">collaborate effectively,
           communicate clearly, and support your team.</span>{' '}
           We want people who are dependable, take responsibility for their work, and contribute to a positive team environment.
         </>
@@ -48,7 +48,7 @@ function TraitCard() {
       description: (
         <>
           A{' '}
-          <span className="bg-blue-200 px-1 rounded">proactive mindset
+          <span className="bg-blue-200 px-1 rounded-xl">proactive mindset
           and a strong work ethic.</span>{' '} 
           We look for students who take ownership of tasks, push themselves to improve, and aren't afraid to step up when challenges arise.
         </>
