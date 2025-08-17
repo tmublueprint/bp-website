@@ -139,6 +139,12 @@ body {
   gap: 2rem;
 }
 
+@media (max-width: 640px) {
+  .footer-content {
+    max-width: 90%;
+  }
+}
+
 .left-section {
   display: flex;
   flex-direction: column;
@@ -155,6 +161,12 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 5rem;
+}
+
+@media (max-width: 640px) {
+  .left-lower {
+    margin-top: 2rem;
+  }
 }
 
 .logo-container {
@@ -233,6 +245,12 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 640px) {
+  .contact {
+    display: none;
+  }
+}
+
 .external-arrow {
   font-size: 1.25rem;
   padding-bottom: 0.1rem;
@@ -252,6 +270,12 @@ body {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .right-section {
+    display: none;
+  }
 }
 
 .nav-group {
