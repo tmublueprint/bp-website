@@ -43,7 +43,7 @@ function AboutPage() {
 
 
     return (
-        <div>
+        <div className="Vector-bg-about">
             <link href="/public/AboutPage.css" rel="stylesheet"/>
             <link href="/src/index.css" rel="stylesheet"/>
             <div id="aboutPage-faceCircle-container">

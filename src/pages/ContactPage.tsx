@@ -3,6 +3,7 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function ContactPage() {
     return (
+        <div className='Vector-bg-contact'>
         <div className='ml-[132.7px] mr-[155.3px] small-screen-comp'>
                 <h1 className="font-['Poppins'] font-bold text-[55.3px] text-[#333] mb-[52.6px] mt-[102px]">Contact Us</h1>
                 <div>
@@ -67,6 +68,7 @@ function ContactPage() {
                         </a>
                     </div>
                 </div>
+        </div>
         </div>
     )
 }

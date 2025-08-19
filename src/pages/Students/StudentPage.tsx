@@ -5,11 +5,13 @@ import TraitCard from '../../components/StudentPage/TraitCard';
 
 function StudentPage() {
     return (
+        <div className='Vector-bg-student'>
         <div className='flex flex-col ml-[132.7px] mr-[118.7px] small-screen-comp'>
             <StudentHeader />
             <AppCard />
             <TraitCard />
             <FAQ />
+        </div>
         </div>
     )
 }
