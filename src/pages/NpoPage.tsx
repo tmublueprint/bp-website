@@ -30,12 +30,14 @@ const customFAQs = [
 
 function NpoPage() {
     return (
+      <div className="Vector-bg-npo">
         <div className='flex flex-col ml-[132.7px] mr-[155.3px] small-screen-comp'>
             <NpoHeader />
             <ExpertCard />
             <DevelopmentCard/>
             <FAQ faqData={customFAQs}/>
         </div>
+      </div>
     )
 }
 

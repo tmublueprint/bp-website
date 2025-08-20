@@ -399,3 +399,48 @@ body {
     margin-bottom: 40px;
   }
 }
+
+.Vector-bg {
+      background: linear-gradient(
+        rgba(148, 201, 255, 0.7) 0%, 
+        rgba(162, 208, 254, 0.6) 21%, 
+        rgba(199, 225, 253, 0.4) 53%,
+        rgb(255, 255, 255) 70%
+    );
+}
+
+.Vector-bg-student {
+    background: linear-gradient(
+      rgba(148, 201, 255, 0.7) 0%, 
+      rgba(162, 208, 254, 0.6) 5%, 
+      rgba(199, 225, 253, 0.4) 15%,
+      rgb(255, 255, 255) 80%
+    );
+}
+
+.Vector-bg-npo {
+    background: linear-gradient(
+      rgba(148, 201, 255, 0.7) 0%, 
+      rgba(162, 208, 254, 0.6) 5%, 
+      rgba(199, 225, 253, 0.4) 15%,
+      rgb(255, 255, 255) 80%
+    );
+}
+
+.Vector-bg-about {
+    background: linear-gradient(
+      rgba(148, 201, 255, 0.7) 0%, 
+      rgba(162, 208, 254, 0.6) 5%, 
+      rgba(199, 225, 253, 0.4) 15%,
+      rgb(255, 255, 255) 80%
+    );
+}
+
+.Vector-bg-contact {
+    background: linear-gradient(
+      rgba(148, 201, 255, 0.7) 0%, 
+      rgba(162, 208, 254, 0.6) 10%, 
+      rgba(199, 225, 253, 0.4) 40%,
+      rgb(255, 255, 255) 80%
+    );
+}
