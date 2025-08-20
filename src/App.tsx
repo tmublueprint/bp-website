@@ -8,11 +8,12 @@ import ProjectPage from './pages/Projects/ProjectPage';
 import ErrorPage from './pages/ErrorPage';
 import NavBar from './components/HomePage/NavBar';
 import Footer from './components/HomePage/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
