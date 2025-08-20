@@ -13,7 +13,11 @@ function NpoHeader() {
             <div className="flex justify-start mt-[3rem]">
                 <GenericButton 
                     label="Contact Us" 
-                    style={{ marginLeft: "0" }}
+                    style={{ 
+                        marginLeft: "0",
+                        background: "linear-gradient(90deg, #94c9ff, #76b7fb, #489cf4, #2788f0, #137ced, #0c78ec)",
+                        color: "white"
+                    }}
                     to="/contact"
                 />
             </div>
