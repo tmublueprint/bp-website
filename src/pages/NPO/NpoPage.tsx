@@ -1,7 +1,7 @@
-import DevelopmentCard from "../components/NpoPage/DevelopmentCard";
-import NpoHeader from "../components/NpoPage/NpoHeader";
-import ExpertCard from "../components/NpoPage/ExpertCard";
-import FAQ from "../components/StudentPage/FAQ";
+import DevelopmentCard from "../../components/NpoPage/DevelopmentCard";
+import NpoHeader from "../../components/NpoPage/NpoHeader";
+import ExpertCard from "../../components/NpoPage/ExpertCard";
+import FAQ from "../../components/StudentPage/FAQ";
 
 const customFAQs = [
   {

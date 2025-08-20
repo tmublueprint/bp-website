@@ -3,7 +3,7 @@ function StudentHeader() {
 
     return (
         <div className="flex flex-col mb-[179.3px] mt-[102.4px]">
-            <h1 className="font-['Poppins'] font-bold text-[55.3px] text-[#333333]">Students</h1>
+            <h1 className="font-['Poppins'] font-bold text-[55.3px] text-[#333]">Students</h1>
             <div className="font-['Poppins'] max-w-[843.3px] text-[20px] mt-5 text-[#333] student-header-small">
                 At Blueprint, we welcome students from all years, programs, and levels of experience at TMU. Whether you’re
                  interested in leading projects or developing tech solutions, we offer opportunities to work on impactful
