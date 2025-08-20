@@ -10,8 +10,13 @@ function ProjectPage() {
                     <p id="projectPage-header-text">Projects</p>
                     <p id="projectPage-header-body">At Blueprint, we develop tech solutions that drive positive change. In partnership with nonprofits, our projects address real-world challenges with a focus on transparency and accessibility. All of our work is open source, allowing everyone to see our progress. Explore our projects and learn how we're making an impact.</p>
                     <GenericButton 
-                    label="See our GitHub" 
-                    style={{ marginLeft: "0" }}
+                        label="See our GitHub" 
+                        style={{ 
+                            marginLeft: "0",
+                            background: "linear-gradient(90deg, #94c9ff, #76b7fb, #489cf4, #2788f0, #137ced, #0c78ec)",
+                            color: "white"
+                        }}
+                        onClick={() => window.open("https://github.com/tmublueprint/bp-website", "_blank")}
                     />
                 </div>
             </div>
@@ -30,7 +35,12 @@ function ProjectPage() {
                     </p>
                     <div className="flex justify-center mt-[19.6px] mb-[100px] md:mb-[205.7px]">
                         <GenericButton 
-                        label="Non-profit" 
+                            label="Non-profit"
+                            to="/npo"
+                            style={{
+                                background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
+                                color: "black"
+                            }}
                         />
                     </div>
                 </div>

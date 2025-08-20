@@ -53,6 +53,9 @@ function ExpertCard() {
             key={index}
             fullWidth={true}
             margin=""
+            style={{ 
+              backgroundColor: "rgba(199, 224, 251, 0.7)"
+            }}
             className="
               w-full max-w-[98vw] sm:max-w-none
               px-4 py-4

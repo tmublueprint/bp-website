@@ -1,13 +1,16 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import { CSSProperties } from "react";
+import { Link } from "react-router-dom";
 
 type GenericButtonProps = {
     label: string;
     className?: string;
     style?: CSSProperties;
+    to?: string;
+    onClick?: () => void;
 };
 
-function GenericButton({ label, className = "", style = {} }: GenericButtonProps) {
+function GenericButton({ label, className = "", style = {}, to, onClick }: GenericButtonProps) {
     const defaultClass = `      
                 min-w-40
                 h-10
@@ -29,13 +32,32 @@ function GenericButton({ label, className = "", style = {} }: GenericButtonProps
                 transition
                 hover:bg-blue-600`;
     
+    const buttonContent = (
+        <>
+            {label}
+            <FiArrowUpRight size={20} />
+        </>
+    );
+
+    if (to) {
+        return (
+            <Link 
+                to={to} 
+                className={`${defaultClass}\n${className}`} 
+                style={{...style, textDecoration: 'none'}}
+            >
+                {buttonContent}
+            </Link>
+        );
+    }
+    
     return (
         <button
             className={`${defaultClass}\n${className}`}
             style={style}
+            onClick={onClick}
         >
-            {label}
-            <FiArrowUpRight size={20} />
+            {buttonContent}
         </button>
     );
 }
