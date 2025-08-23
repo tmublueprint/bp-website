@@ -65,18 +65,18 @@ function Footer() {
             <h3>General</h3>
             <a href="/">Home</a>
             <a href="/about">About Us</a>
-            <a href="/projects">Projects</a>
+            <a href="/project">Projects</a>
             <a href="/contact">Contact Us</a>
           </div>
           <div className="nav-group">
             <h3>Students</h3>
-            <a href="/faq">FAQ</a>
-            <a href="/process">Process</a>
+            <a href="/student">FAQ</a>
+            <a href="/student">Process</a>
           </div>
           <div className="nav-group">
             <h3>Non-profit</h3>
-            <a href="/faq">FAQ</a>
-            <a href="/process">Process</a>
+            <a href="/npo">FAQ</a>
+            <a href="/npo">Process</a>
           </div>
         </div>
        

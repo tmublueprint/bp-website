@@ -16,7 +16,7 @@ function FAQ({
   faqData = [
     {
       question: "01. Who can apply?",
-      answer: "Any TMU student, regardless of year, program, or experience level."
+      answer: "Any TMU student, regardless of year, program, or experience level (preference maybe for specific programs)."
     },
     {
       question: "02. Do I need prior experience?",
@@ -24,11 +24,11 @@ function FAQ({
     },
     {
       question: "03. What roles are available?",
-      answer: "We're looking for Project Leads and Developers to work on nonprofit projects."
+      answer: "We're looking for Project Leads and Developers to work on nonprofit projects & our internal projects (website, internal tools...etc)."
     },
     {
       question: "04. What's the time commitment?",
-      answer: "Expect to dedicate a few hours per week to meetings, development, and collaboration."
+      answer: "Expect to dedicate 5-10 hours per week to meetings, development, and collaboration."
     },
     {
       question: "05. Can I apply if I'm already in a co-op or internship?",
@@ -38,7 +38,7 @@ function FAQ({
   className = ""
 }: FAQProps) {    
     return (
-        <div className={`mb-[120.4px] ${className}`}>
+        <div id="faq" className={`mb-[120.4px] ${className}`}>
             <h1 className="font-['Poppins'] font-bold text-[55.3px] text-center text-[#333333] mb-[62.2px] xl:text-[70px]">
               {title}
             </h1>
