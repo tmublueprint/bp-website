@@ -325,6 +325,12 @@ body {
     }
 }
 
+@media (max-width: 820px) {
+  .num-list-small {
+    display: none;
+  }
+}
+
 .trait-card-mobile {
   padding: 1.25rem 1rem;
 }

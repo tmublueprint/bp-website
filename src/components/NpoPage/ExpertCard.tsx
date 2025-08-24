@@ -46,7 +46,7 @@ function ExpertCard() {
 
   return (
     <div className="mb-[112.3px]">
-      <h1 className="font-['Poppins'] font-bold text-[32px] sm:text-[55.3px] mb-8 sm:mb-12 text-[#333]">Our Expertise</h1>
+      <h1 className="font-['Poppins'] font-medium text-[32px] sm:text-[55.3px] mb-8 sm:mb-12 text-[#333]">Our Expertise</h1>
       <div className="flex flex-col w-full gap-4 sm:gap-6">
         {traits.map((trait, index) => (
           <Card
