@@ -49,6 +49,25 @@
     white-space: nowrap;
 }
 
+#navBar-button-small {
+    width: 40px;
+    height: 32px;
+    background-color: #0c78ec;
+    border-radius: 24px;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    margin-left: auto;
+    display: none;
+}
+
+.white-north-east-arrow-small {
+    display: absolute;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(143deg) brightness(109%) contrast(101%); /*Makes it white on the blue background*/
+    margin: auto;
+    width: 16px;
+}
+
 .white-north-east-arrow {
     display: inline-block;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(143deg) brightness(109%) contrast(101%); /*Makes it white on the blue background*/
@@ -124,13 +143,16 @@
     cursor: pointer;
 }
 
-#navBar-bp-full-logo {
-    height: 48px;
-    display: none;
+#home-link-full {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; 
-    position: absolute;   
+    position: absolute;
+}
+
+#navBar-bp-full-logo {
+    height: 48px;
+    display: none;
 }
 
 @media screen and (max-width: 1030px) {
@@ -215,6 +237,8 @@
         top: 25px;
         height: 30px;
     }
+    #navBar-button { display: none; }
+    #navBar-button-small { display: flex; }
 }
 
 @media screen and (max-width: 295px) { /* Just in case lol */

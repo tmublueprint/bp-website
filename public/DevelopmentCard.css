@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     padding: 20px;
+    margin: 30px;
 }
 
 #devCard-body {
@@ -14,14 +15,12 @@
 
 #devCard-list-numbers {
     width: 66.7px;
-    /* height: 1154.4px; */
 }
 
 #devCard-title {
     width: 404px;
     height: 255.3px;
     margin-right: 26.4px;
-    /* margin-left: auto; */
     font-size: var(--font-size-heading);
     font-weight: 600;
 }
@@ -39,11 +38,9 @@
     font-size: var(--font-size-heading2);
     font-weight: bold;
     margin-top: 6px;
-    /* height: 41px; */
 }
 
 .devCard-body-text {
-    /* min-height: 154px; */
     max-width: 510.7px;
     font-size: var(--font-size-small-body);
     margin-top: 6px;

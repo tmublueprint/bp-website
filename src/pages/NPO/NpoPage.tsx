@@ -29,16 +29,18 @@ const customFAQs = [
 <FAQ title="About Us" faqData={customFAQs} />
 
 function NpoPage() {
-    return (
-      <div className="Vector-bg-npo">
-        <div className='flex flex-col ml-[132.7px] mr-[155.3px] small-screen-comp'>
-            <NpoHeader />
-            <ExpertCard />
-            <DevelopmentCard/>
-            <FAQ faqData={customFAQs}/>
-        </div>
+  return (
+    <div className="Vector-bg-npo">
+      <div className='flex flex-col ml-[132.7px] mr-[155.3px] small-screen-comp'> 
+          <NpoHeader />
+          <ExpertCard />
       </div>
-    )
+      <DevelopmentCard/> {/* This ain't my fault, anyways need to clean this up later*/}
+      <div className='flex flex-col ml-[132.7px] mr-[155.3px] small-screen-comp'>
+          <FAQ faqData={customFAQs}/>
+      </div>
+    </div>
+  )
 }
 
 export default NpoPage;

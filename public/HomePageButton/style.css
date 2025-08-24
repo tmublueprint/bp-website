@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Poppins;
+    src: url('/poppins/Poppins-Regular.ttf');
+}
+
+#homePage-link {
+    width: 136.7px;
+    height: 25.9px;
+    margin: 3.7px auto 17px;
+    background-image: var(--color-light-button);
+    border-radius: var(--border-radius-pill-button);
+    display: flex;
+}
+
+#homePage-link:hover {
+    background-image: var(--color-dark-button);
+    cursor: pointer;
+}
+
+#homePage-link-text {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    font-size: 20.7px;
+    position: relative;
+    top: -0.1em; /*Since the text box is bigger than the button*/
+}
+
+.north-east-arrow {
+    height: 1em;
+    width: 1em;
+    margin: auto 0.5em auto 0;
+}
+
+
+@media (min-width: 96rem) { /* 2xl size */
+
+}
+
+@media (max-width: 64rem ) { /* l size */
+
+}
+
+@media (max-width: 40rem) { /* s size */
+
+}

@@ -10,8 +10,9 @@
 import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
 import NavBar from "../components/HomePage/NavBar";
 import ValuesCard from "../components/HomePage/ValuesCard";
-import GenericButton from "../components/GenericButton";
-import Card from "../components/Card";
+import HomeCard from "../components/HomePage/HomeCard";
+import HomePageButton from "../components/HomePage/HomePageButton";
+import WelcomeCard from "../components/HomePage/WelcomeCard";
 
 import React, { useRef } from "react";
 
@@ -23,56 +24,59 @@ function HomePage() {
             <div id="top-container">
                 <img src="public/people-vectors.svg" id="people-vectors"/>
                 <img src="public/team-callout.svg" id="team-callout"/>
+                <WelcomeCard></WelcomeCard>
             </div>
             <div id="bottom-container">
-                <a href="/about"><GenericButton
-                    label="About Us"
-                    style={{ /* Class variables can't override inline thus I'm doing it this way */
+                <HomePageButton
+                    link="/about"
+                    text="About Us"
+                    style = {{
                         background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
-                        color: "black",
-                        width: "150px",
-                        margin: "auto",
-                        marginBottom: "4rem",
-                        display: "block" /* Flex breaks it */
-                    }}
-                /></a>
+                        width: "130px",
+                        marginBottom: "60px",
+                    }}>
+                </HomePageButton>
 
                 <div id="homePage-our-work-header">
                     <h2 id="homePage-our-work">Our work</h2>
-                    <a href="/project" id="homePage-project-button"><GenericButton
-                        label=""
-                        style={{
+                    <span id="homePage-project-button"><HomePageButton
+                        arrowOnly = {true}
+                        arrowSize = "14px"
+                        style = {{
                             background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
-                            color: "black",
                             width: "50px",
-                            height: "35px",
-                            position: "relative",
-                            padding: "0 8px 0 0"
-                             /* Flex breaks it */
-                        }}
-                    /></a>
+                            margin: "auto"
+                        }}>
+                    </HomePageButton></span>
                 </div>
                 <div id="homePage-scroll-container">
                     <div id="homePage-card-container">
-                        <Card
+                        {/* <HomeCard 
+                            style = {{
+                                background: "transparent",
+                                border: "0px",
+                                boxShadow: "none",
+                            }}
+                        ></HomeCard> */}
+                        <HomeCard
                             style = {{
                                 justifyContent: "center",
                                 alignItems: "center",
                             }}
                         >
                             <p className="text-black text-lg">Coming Soon</p>
-                        </Card>
-                        <Card>
+                        </HomeCard>
+                        <HomeCard>
                             <img src="public/logo.png" alt="example" className="object-contain w-full h-full" />
-                        </Card>
-                        <Card
+                        </HomeCard>
+                        <HomeCard
                             style = {{
                                 justifyContent: "center",
                                 alignItems: "center",
                             }}
                         >
                             <p className="text-black text-lg">Coming Soon</p>
-                        </Card>
+                        </HomeCard>
                     </div>
                 </div>
                 <ValuesCard />
