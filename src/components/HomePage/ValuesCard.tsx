@@ -4,10 +4,10 @@ function ValuesCard() {
             <div className="flex mx-auto">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-[70px] font-bold text-center">Our Values</h1>
             </div>
-            <div className="flex flex-wrap justify-center gap-6 lg:flex-nowrap lg:max-w-7xl lg:mx-auto">
-                <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-96 xl:w-[440px]">
+            <div className="flex flex-wrap justify-center gap-6 xl:flex-nowrap lg:max-w-7xl lg:mx-auto">
+                <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-[300px] xl:w-[440px]">
                     <div className="">
-                        <img src="Light bulb vector.svg" alt="Light bulb icon" />
+                        <img src="Light bulb vector.svg" alt="Light bulb icon" className="!w-12 !h-12" />
                     </div>
                     <div>
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Innovation</h1>
@@ -20,9 +20,9 @@ function ValuesCard() {
                         </p>
                     </div>
                 </div>
-                <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-96 xl:w-[440px]">
+                <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-[300px] xl:w-[440px]">
                     <div className="">
-                        <img src="Heart vector.svg" alt="Heart icon" />
+                        <img src="Heart vector.svg" alt="Heart icon" className="!w-10 !h-10"/>
                     </div>
                     <div>
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Community</h1>
@@ -35,9 +35,9 @@ function ValuesCard() {
                         </p>
                     </div>
                 </div>
-                <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-96 xl:w-[440px]">
+                <div className="Vector flex flex-col gap-4 rounded-2xl w-full sm:w-96 md:w-[420px] lg:w-[300px] xl:w-[440px]">
                     <div className="">
-                        <img src="Balance vector.svg" alt="Balance icon" />
+                        <img src="Balance vector.svg" alt="Balance icon" className="!w-12 !h-12"/>
                     </div>
                     <div>
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Responsibility</h1>
@@ -51,6 +51,16 @@ function ValuesCard() {
                     </div>
                 </div>
             </div>
+            
+            {/* Add custom styles for iPad Pro specifically */}
+            <style jsx>{`
+                @media screen and (width: 1024px) {
+                    .Vector {
+                        width: 310px !important;
+                        padding: 1.75rem 2rem;
+                    }
+                }
+            `}</style>
         </div>
     )
 }

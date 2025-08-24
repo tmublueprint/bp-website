@@ -2,6 +2,7 @@ import GenericButton from "../../components/GenericButton";
 
 function ProjectPage() {
     return (
+        <div className="Vector-bg-contact">
         <div id="projectPage-container">
             <link href="/public/ProjectPage.css" rel="stylesheet" />
             <link href="/src/index.css" rel="stylesheet" />
@@ -46,6 +47,7 @@ function ProjectPage() {
                 </div>
             </div>
 
+        </div>
         </div>
     )
 }

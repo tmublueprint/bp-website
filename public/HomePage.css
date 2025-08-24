@@ -35,8 +35,9 @@
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
-    justify-content: center;
-    margin: 0 8%;
+    justify-content: flex-start; /* Change from center to flex-start */
+    margin: 0 auto; /* Use auto margins for horizontal centering */
+    max-width: 85%; /* Constrain max width */
     height: 400px;
 }
 
@@ -60,7 +61,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    justify-content: center; /* Add this to center cards */
+    gap: 20px; /* Add consistent spacing between cards */
+    padding: 0 20px; /* Add some padding */
+    margin: 0 auto; /* Center the container */
 }
 
 #homePage-container {

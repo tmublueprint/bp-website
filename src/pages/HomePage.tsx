@@ -23,7 +23,6 @@ function HomePage() {
             <link href="/src/index.css" rel="stylesheet" />
             <div id="top-container">
                 <img src="public/people-vectors.svg" id="people-vectors"/>
-                <img src="public/team-callout.svg" id="team-callout"/>
                 <WelcomeCard></WelcomeCard>
             </div>
             <div id="bottom-container">
@@ -40,6 +39,7 @@ function HomePage() {
                 <div id="homePage-our-work-header">
                     <h2 id="homePage-our-work">Our work</h2>
                     <span id="homePage-project-button"><HomePageButton
+                        link="/project"
                         arrowOnly = {true}
                         arrowSize = "14px"
                         style = {{
@@ -66,8 +66,13 @@ function HomePage() {
                         >
                             <p className="text-black text-lg">Coming Soon</p>
                         </HomeCard>
-                        <HomeCard>
-                            <img src="public/logo.png" alt="example" className="object-contain w-full h-full" />
+                        <HomeCard
+                            style = {{
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <p className="text-black text-lg">Coming Soon</p>
                         </HomeCard>
                         <HomeCard
                             style = {{
