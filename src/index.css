@@ -329,6 +329,9 @@ body {
   .num-list-small {
     display: none;
   }
+  h1#appheader-small {
+    font-size: 28px;
+  }
 }
 
 .trait-card-mobile {
