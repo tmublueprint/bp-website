@@ -3,7 +3,7 @@ import GenericButton from "../GenericButton";
 function NpoHeader() {
     return (
         <div className="flex flex-col mb-[179.3px] mt-[102.4px]">
-            <h1 className="font-['Poppins'] font-bold text-[55.3px] text-[#333]">Non-profit</h1>
+            <h1 className="font-medium text-[55.3px] text-[#333]">Non-profit</h1>
             <div className="font-['Poppins'] max-w-[843.3px] text-[20px] student-header-small mt-5 text-[#333]">
                 We partner with nonprofits to build custom tech solutions that drive real impact.
                  Our student-led teams work closely with organizations to understand their needs
