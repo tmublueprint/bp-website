@@ -1,8 +1,8 @@
 import Card from "../Card"
-import laptop from '../../../public/laptop.svg'
-import team from '../../../public/team.svg'
-import gear from '../../../public/gear.svg'
-import paint from '../../../public/paint.svg'
+import laptop from '../../../src/assets/images/laptop.svg'
+import team from '../../../src/assets/images/team.svg'
+import gear from '../../../src/assets/images/gear.svg'
+import paint from '../../../src/assets/images/paint.svg'
 
 function ExpertCard() {
 

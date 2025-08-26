@@ -1,3 +1,9 @@
+import NumberList from "/src/assets/images/number-list-h.svg"
+import Num1 from "/src/assets/images/number1.svg"
+import Num2 from "/src/assets/images/number2.svg"
+import Num3 from "/src/assets/images/number3.svg"
+import Num4 from "/src/assets/images/number4.svg"
+
 function AppCard() {
     return (
         <div className="mb-12 sm:mb-[134.1px]">
@@ -6,47 +12,47 @@ function AppCard() {
             </h1>
 
             <div className="hidden lg:flex justify-center p-9">
-                <img className="xl:w-[1185px] mx-auto" src="number-list-h.svg" />
+                <img className="xl:w-[1185px] mx-auto" src={NumberList} />
             </div>
 
             <div className="flex flex-col lg:flex-row items-center max-w-full lg:max-w-[1056px] xl:max-w-[1280px] gap-6 xl:gap-35 mx-auto">
                 
                 <div className="text-center px-4 mb-8 lg:mb-0">
-                    <img src="number1.svg" alt="Step 1" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
-                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4">
+                    <img src={Num1} alt="Step 1" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
+                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4 text-[#333]">
                         Do your Research
                     </h1>
-                    <p className="text-sm sm:text-base xl:text-[16.7px]">
+                    <p className="text-sm sm:text-base xl:text-[16.7px] text-[#333]">
                         Explore our ongoing projects and connect with us on our Instagram, LinkedIn and other socials to stay up to date.
                     </p>
                 </div>
 
                 <div className="text-center px-4 mb-8 lg:mb-0">
-                    <img src="number2.svg" alt="Step 2" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
-                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4">
+                    <img src={Num2} alt="Step 2" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
+                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4 text-[#333]">
                         Submit your Application
                     </h1>
-                    <p className="text-sm sm:text-base xl:text-[16.7px]">
+                    <p className="text-sm sm:text-base xl:text-[16.7px] text-[#333]">
                         Tell us about yourself and why you want to join Blueprint. We review every application carefully and will invite you for a chat if we see a good fit.
                     </p>
                 </div>
 
                 <div className="text-center px-4 mb-8 lg:mb-0">
-                    <img src="number3.svg" alt="Step 3" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
-                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4">
+                    <img src={Num3} alt="Step 3" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
+                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4 text-[#333]">
                         Interviews
                     </h1>
-                    <p className="text-sm sm:text-base xl:text-[16.7px]">
+                    <p className="text-sm sm:text-base xl:text-[16.7px] text-[#333]">
                         We'll invite you for a casual conversation. This is your chance to ask questions, and we'll also discuss role-specific technical details.
                     </p>
                 </div>
 
                 <div className="text-center px-4">
-                    <img src="number4.svg" alt="Step 4" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
-                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4">
+                    <img src={Num4} alt="Step 4" className="block lg:hidden mx-auto mb-4 w-12 h-12" />
+                    <h1 id="appheader-small" className="font-['Poppins'] font-semibold text-lg xl:text-[30px] pb-2 lg:pb-4 text-[#333]">
                         Final Decision
                     </h1>
-                    <p className="text-sm sm:text-base xl:text-[16.7px]">
+                    <p className="text-sm sm:text-base xl:text-[16.7px] text-[#333]">
                         We'll notify you of our decision soon after. If selected, please confirm quickly, and we'll guide you through the onboarding process.
                     </p>
                 </div>

@@ -1,7 +1,14 @@
 import LeadershipCard from "../../components/AboutPage/LeadershipCard";
 import FaceCircle from "../../components/FaceCircle";
 import JoinTeamCard from "../../components/AboutPage/JoinTeamCard";
-
+import '../../assets/css/AboutPage.css';
+import '../../index.css';
+import Zach from '/src/assets/images/zach-pic.png';
+import Vic from '/src/assets/images/vic-pic.png';
+import Kristina from '/src/assets/images/kristina-pic.png';
+import Naetri from '/src/assets/images/naetri-pic.png';
+import Ammar from '/src/assets/images/ammar-pic.png';
+import Aaishwin from '/src/assets/images/aaishwin-pic.png';
 
 function AboutPage() {
     class Person {
@@ -19,12 +26,12 @@ function AboutPage() {
     }
 
     const people = [
-        new Person("Zachary Toye-Nakamura", "Co-president", "zach-pic.png", "zachary-toye-nakamura"),
-        new Person("Vicheka Oeun", "Co-president", "vic-pic.png", "vichekaoeun"),
-        new Person("Kristina Truong", "VP of Outreach", "kristina-pic.png", "kristina-truong-1kt"),
-        new Person("Naetri Niranjan", "VP of Design", "naetri-pic.png", "naetri-niranjan"),
-        new Person("Ammar Ahmad", "VP of Operations", "ammar-pic.png", "ammar-ahmad1"),
-        new Person("Aaishwin Sathisshkumar", "VP of Social", "aaishwin-pic.png", "aaishwin-sathisshkumar-87826b2b6")
+        new Person("Zachary Toye-Nakamura", "Co-president", Zach, "zachary-toye-nakamura"),
+        new Person("Vicheka Oeun", "Co-president", Vic, "vichekaoeun"),
+        new Person("Kristina Truong", "VP of Outreach", Kristina, "kristina-truong-1kt"),
+        new Person("Naetri Niranjan", "VP of Design", Naetri, "naetri-niranjan"),
+        new Person("Ammar Ahmad", "VP of Operations", Ammar, "ammar-ahmad1"),
+        new Person("Aaishwin Sathisshkumar", "VP of Social", Aaishwin, "aaishwin-sathisshkumar-87826b2b6")
     ]
 
     const cards = [];
@@ -44,8 +51,6 @@ function AboutPage() {
 
     return (
         <div className="Vector-bg-about">
-            <link href="/public/AboutPage.css" rel="stylesheet"/>
-            <link href="/src/index.css" rel="stylesheet"/>
             <div id="aboutPage-faceCircle-container">
                 <FaceCircle />
                 <div id="aboutPage-title-container">

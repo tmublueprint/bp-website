@@ -1,5 +1,6 @@
 "use client"
 import type React from "react"
+import LinkedInLogo from "/src/assets/images/linkedin-logo.svg"
 
 interface LeadershipCardProps {
   name: string
@@ -75,7 +76,7 @@ const LeadershipCard: React.FC<LeadershipCardProps> = ({ name, title, imageUrl, 
           "
             aria-label={`View ${name}'s LinkedIn profile`}
           >
-            <img src="/linkedin-logo.svg" alt="LinkedIn"/>
+            <img src={LinkedInLogo} alt="LinkedIn"/>
           </a>
         )}
       </div>

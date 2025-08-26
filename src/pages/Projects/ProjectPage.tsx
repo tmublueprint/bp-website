@@ -1,11 +1,10 @@
 import GenericButton from "../../components/GenericButton";
+import '/src/assets/css/ProjectPage.css';
 
 function ProjectPage() {
     return (
         <div className="Vector-bg-contact">
         <div id="projectPage-container">
-            <link href="/public/ProjectPage.css" rel="stylesheet" />
-            <link href="/src/index.css" rel="stylesheet" />
             <div id="projectPage-top-container">
                 <div id="projectPage-header">
                     <p id="projectPage-header-text">Projects</p>

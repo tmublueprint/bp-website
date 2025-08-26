@@ -1,8 +1,8 @@
 import Card from "../Card"
-import heart from '../../../public/heart.svg'
-import checkmark from '../../../public/checkmark.svg'
-import laptop from '../../../public/laptop.svg'
-import team from '../../../public/team.svg'
+import heart from '../../../src/assets/images/heart.svg'
+import checkmark from '../../../src/assets/images/checkmark.svg'
+import laptop from '../../../src/assets/images/laptop.svg'
+import team from '../../../src/assets/images/team.svg'
 
 function TraitCard() {
 
@@ -75,7 +75,7 @@ function TraitCard() {
             <div className="flex flex-col h-full pl-2 pr-2 py-4 sm:pl-[54px] sm:pr-8 sm:py-8">
               <img src={trait.icon} alt={trait.title} className="w-10 h-10 mb-2 sm:w-12 sm:h-12 sm:mb-1 xl:w-16 xl:h-16" />
 
-              <h2 className="font-['Poppins'] font-bold text-[20px] sm:text-[28px] xl:text-[33px] mb-2 sm:mb-4 leading-tight">
+              <h2 className="font-['Poppins'] font-bold text-[20px] sm:text-[28px] xl:text-[33px] mb-2 sm:mb-4 leading-tight text-[#333]">
                 {trait.title}
               </h2>
 

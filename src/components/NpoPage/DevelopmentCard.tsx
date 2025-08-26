@@ -1,19 +1,19 @@
-import ListNumbers from '/public/list-numbers.svg';
+import ListNumbers from '../../assets/images/list-numbers.svg';
+import '../../assets/css/DevelopmentCard.css';
+import '../../index.css';
 
 function DevelopmentCard() {
     return (
         <div className="w-full px-4 sm:px-8 max-w-screen overflow-hidden">
             <div id="devCard-container" className='mb-[82.1px]'>
-                <link rel="stylesheet" href="/public/DevelopmentCard.css" />
-                <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap' />
-                <div id="devCard-title">
+                <div id="devCard-title" className='text-[#333]'>
                     <p>Product</p>
                     <p>Development</p>
                     <p>Process</p>
                 </div>
                 <div id="devCard-body">
                     <img src={ListNumbers} alt="list of numbers" id="devCard-list-numbers" />
-                    <ul id="devCard-text">
+                    <ul id="devCard-text" className='text-[#333]'>
                         <li>
                             <p className="devCard-body-title">Discovery & Planning</p>
                             <p className="devCard-body-text">We start by understanding the nonprofit’s challenges and goals. Through research and discussions, we define the project scope, outline key requirements, and ensure our solution aligns with their mission.</p>

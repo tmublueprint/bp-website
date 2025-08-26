@@ -13,16 +13,17 @@ import ValuesCard from "../components/HomePage/ValuesCard";
 import HomeCard from "../components/HomePage/HomeCard";
 import HomePageButton from "../components/HomePage/HomePageButton";
 import WelcomeCard from "../components/HomePage/WelcomeCard";
+import '../index.css';
+import '../assets/css/HomePage.css';
+import PeopleVectors from "../assets/images/people-vectors.svg";
 
 import React, { useRef } from "react";
 
 function HomePage() {
     return (
         <div id="homePage-container">
-            <link href="/public/HomePage.css" rel="stylesheet" />
-            <link href="/src/index.css" rel="stylesheet" />
             <div id="top-container">
-                <img src="public/people-vectors.svg" id="people-vectors"/>
+                <img src={PeopleVectors} id="people-vectors"/>
                 <WelcomeCard></WelcomeCard>
             </div>
             <div id="bottom-container">
@@ -37,7 +38,7 @@ function HomePage() {
                 </HomePageButton>
 
                 <div id="homePage-our-work-header">
-                    <h2 id="homePage-our-work">Our work</h2>
+                    <h2 id="homePage-our-work" className="text-[#333]">Our work</h2>
                     <span id="homePage-project-button"><HomePageButton
                         link="/project"
                         arrowOnly = {true}

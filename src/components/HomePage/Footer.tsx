@@ -6,6 +6,7 @@
 
 import React from 'react';
 import { FaInstagram, FaLinkedin, FaYoutube, FaGithub } from 'react-icons/fa';
+import BlueprintLogo from '/src/assets/images/logo.png';
 import '../../index.css';
 
 function Footer() {
@@ -15,7 +16,7 @@ function Footer() {
         <div className="left-section">
           <div className="left-upper">
             <div className="logo-container">
-              <img src="/logo.png" alt="Blueprint Logo" className="logo" />
+              <img src={BlueprintLogo} alt="Blueprint Logo" className="logo" />
               <span className="blueprint">blueprint</span>
             </div>
             <p className="Tech-for-social-good">Tech for social good.</p>

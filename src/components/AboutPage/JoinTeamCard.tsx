@@ -5,7 +5,7 @@ import GenericButton from "../../components/GenericButton";
 const JoinTeamCard = () => {
   return (
     <section className="flex flex-col items-center gap-6">
-      <h1 className="text-6xl font-bold text-gray-900">Join The Team!</h1>
+      <h1 className="text-6xl font-bold text-[#333]">Join The Team!</h1>
       <p className="text-base text-gray-700 max-w-xl mx-auto mb-4">
         Passionate about using tech for good? We're looking for Project Leads and Developers to build impactful solutions for nonprofits. Gain hands-on experience, collaborate with like-minded peers, and make a difference.
       </p>

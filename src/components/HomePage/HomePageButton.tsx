@@ -1,5 +1,6 @@
-import NorthEastArrow from '/public/north-east-arrow.svg';
+import NorthEastArrow from "/src/assets/images/north-east-arrow.svg";
 import { CSSProperties } from "react";
+import '/src/assets/css/style.css';
 
 function HomePageButton(
 {   
@@ -34,7 +35,6 @@ function HomePageButton(
 
     return (
         <div>
-            <link href="/public/HomePageButton/style.css" rel="stylesheet" />
             <a id="homePage-link" href={link} style={style}>
                 {buttonText}
                 {arrowImg}

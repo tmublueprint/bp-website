@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import '../assets/css/ContactPage.css';
+import '../index.css';
 
 function ContactPage() {
     return (

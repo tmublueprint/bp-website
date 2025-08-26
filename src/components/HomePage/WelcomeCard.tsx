@@ -4,6 +4,8 @@
 // The introduction sprite
 // The introduction text
 
+import TeamPlus from "../../assets/images/TeamPlus.svg";
+
 function WelcomeCard() {
 
     const containerStyle = {
@@ -53,13 +55,13 @@ function WelcomeCard() {
                     }
                 `}
             </style>
-                <p className="t">We are a student-led</p>
+                <p className="t text-[#333]">We are a student-led</p>
                 <div style={rowStyle}>
-                    <p className="t">organization</p>
-                    <img src="public/HomePage/TeamPlus.svg" style={imgStyle} id="test"/>
-                    <p className="t">creating tech</p>
+                    <p className="t text-[#333]">organization</p>
+                    <img src={TeamPlus} style={imgStyle} id="test"/>
+                    <p className="t text-[#333]">creating tech</p>
                 </div>
-                <p className="t">solutions for nonprofits.</p>
+                <p className="t text-[#333]">solutions for nonprofits.</p>
             </div>
         </div>
     )

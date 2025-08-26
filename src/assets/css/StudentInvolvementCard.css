@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Poppins;
-    src: url('/poppins/Poppins-Regular.ttf');
+    src: url('/src/font/poppins/Poppins-Regular.ttf');
 }
 
 #stdInvolv-center-container {
