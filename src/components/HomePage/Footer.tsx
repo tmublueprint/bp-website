@@ -6,12 +6,20 @@
 
 import React from 'react';
 import { FaInstagram, FaLinkedin, FaYoutube, FaGithub } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import BlueprintLogo from '/src/assets/images/logo.png';
 import '../../index.css';
 
 function Footer() {
   const basePath = "/bp-website";
-  
+  const navigate = useNavigate();
+
+  // Handle navigation without page reload
+  const handleClick = (e, path) => {
+    e.preventDefault();
+    navigate(path);
+  };
+
   return (
     <footer className="footer-gradient">
       <div className="footer-content">
@@ -66,20 +74,20 @@ function Footer() {
         <div className="right-section">
           <div className="nav-group">
             <h3>General</h3>
-            <a href={`${basePath}/`}>Home</a>
-            <a href={`${basePath}/about`}>About Us</a>
-            <a href={`${basePath}/project`}>Projects</a>
-            <a href={`${basePath}/contact`}>Contact Us</a>
+            <a href={`${basePath}/`} onClick={(e) => handleClick(e, '/')}>Home</a>
+            <a href={`${basePath}/about`} onClick={(e) => handleClick(e, '/about')}>About Us</a>
+            <a href={`${basePath}/project`} onClick={(e) => handleClick(e, '/project')}>Projects</a>
+            <a href={`${basePath}/contact`} onClick={(e) => handleClick(e, '/contact')}>Contact Us</a>
           </div>
           <div className="nav-group">
             <h3>Students</h3>
-            <a href={`${basePath}/student`}>FAQ</a>
-            <a href={`${basePath}/student`}>Process</a>
+            <a href={`${basePath}/student`} onClick={(e) => handleClick(e, '/student')}>FAQ</a>
+            <a href={`${basePath}/student`} onClick={(e) => handleClick(e, '/student')}>Process</a>
           </div>
           <div className="nav-group">
             <h3>Non-profit</h3>
-            <a href={`${basePath}/npo`}>FAQ</a>
-            <a href={`${basePath}/npo`}>Process</a>
+            <a href={`${basePath}/npo`} onClick={(e) => handleClick(e, '/npo')}>FAQ</a>
+            <a href={`${basePath}/npo`} onClick={(e) => handleClick(e, '/npo')}>Process</a>
           </div>
         </div>
        
