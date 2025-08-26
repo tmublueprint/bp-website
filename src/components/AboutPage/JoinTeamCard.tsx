@@ -17,7 +17,7 @@ const JoinTeamCard = () => {
             background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
             color: "black"
           }}
-          to="/student"
+          to="student"
         />
       </div>
     </section>

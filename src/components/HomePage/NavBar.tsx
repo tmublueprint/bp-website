@@ -27,16 +27,16 @@ function NavBar() {
                 <a id="home-link" href="/"><img src={SmallLogo} alt="bp logo" id="bp-small-logo"/></a>
                 <a id="home-link-full" href="/"><img src={FullLogo} alt="bp logo" id="navBar-bp-full-logo"/></a>
                 <div id="navBar-items">
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/project">Projects</a></li>
-                    <li><a href="/student">Students</a></li>
-                    <li><a href="/npo">Non-Profits</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="project">Projects</a></li>
+                    <li><a href="student">Students</a></li>
+                    <li><a href="npo">Non-Profits</a></li>
                 </div>
-                <a id="navBar-button" href="/contact">
+                <a id="navBar-button" href="contact">
                     <p id="navBar-button-text">Contact Us</p>
                     <img src={NorthEastArrow} alt="arrow" className="white-north-east-arrow"/>
                 </a>
-                <a id="navBar-button-small" href="/contact">
+                <a id="navBar-button-small" href="contact">
                     <img src={NorthEastArrow} alt="arrow" className="white-north-east-arrow-small"/>
                 </a>
                 
