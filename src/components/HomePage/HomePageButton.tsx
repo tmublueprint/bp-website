@@ -1,6 +1,7 @@
-import NorthEastArrow from "/src/assets/images/north-east-arrow.svg";
+import { useNavigate } from "react-router-dom";
+import NorthEastArrow from "../../assets/images/north-east-arrow.svg";
 import { CSSProperties } from "react";
-import '/src/assets/css/style.css';
+import '../../assets/css/style.css';
 
 function HomePageButton(
 {   
@@ -18,6 +19,13 @@ function HomePageButton(
     arrowSize?: string;
     style?: CSSProperties;
 }) {
+    const navigate = useNavigate();
+    
+    const handleClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        navigate(link);
+    };
+
     const arrowImg = (
         <img
             src={NorthEastArrow}
@@ -35,11 +43,17 @@ function HomePageButton(
 
     return (
         <div>
-            <a id="homePage-link" href={link} style={style}>
+            <a 
+              onClick={handleClick} 
+              id="homePage-link" 
+              href="#" 
+              style={style}
+            >
                 {buttonText}
                 {arrowImg}
             </a>
         </div>
     );
 }
+
 export default HomePageButton;
