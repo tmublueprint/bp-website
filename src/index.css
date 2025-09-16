@@ -456,3 +456,8 @@ body {
       rgb(255, 255, 255) 80%
     );
 }
+
+.navBar-gradient {
+  width: 100%;
+  background: #B4D9FF
+}
