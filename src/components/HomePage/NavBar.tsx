@@ -5,7 +5,7 @@
 // - Make header stick to top
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SmallLogo from '../../assets/images/small-logo.svg';
 import FullLogo from '../../assets/images/full-logo.svg';
 import HamburgerIcon from '../../assets/images/hamburger-icon.svg';
@@ -21,7 +21,7 @@ function NavBar() {
         setMenuOpen(current => !current);
     }
 
-    function handleNavigation(e, path) {
+    function handleNavigation(e: React.MouseEvent<HTMLAnchorElement>, path: string) {
         e.preventDefault();
         navigate(path);
         setMenuOpen(false);

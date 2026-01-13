@@ -8,7 +8,6 @@
 // - Footer
 
 import StudentInvolvementCard from "../components/HomePage/StudentInvolvementCard";
-import NavBar from "../components/HomePage/NavBar";
 import ValuesCard from "../components/HomePage/ValuesCard";
 import HomeCard from "../components/HomePage/HomeCard";
 import HomePageButton from "../components/HomePage/HomePageButton";
@@ -17,20 +16,19 @@ import '../index.css';
 import '../assets/css/HomePage.css';
 import PeopleVectors from "../assets/images/people-vectors.svg";
 
-import React, { useRef } from "react";
 
 function HomePage() {
     return (
         <div id="homePage-container">
             <div id="top-container">
-                <img src={PeopleVectors} id="people-vectors"/>
+                <img src={PeopleVectors} id="people-vectors" />
                 <WelcomeCard></WelcomeCard>
             </div>
             <div id="bottom-container">
                 <HomePageButton
                     link="/about"
                     text="About Us"
-                    style = {{
+                    style={{
                         background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
                         width: "130px",
                         marginBottom: "60px",
@@ -41,9 +39,9 @@ function HomePage() {
                     <h2 id="homePage-our-work" className="text-[#333]">Our work</h2>
                     <span id="homePage-project-button"><HomePageButton
                         link="/project"
-                        arrowOnly = {true}
-                        arrowSize = "14px"
-                        style = {{
+                        arrowOnly={true}
+                        arrowSize="14px"
+                        style={{
                             background: "linear-gradient(45deg, #c7e1fd35 9%, #a2d0fe82 59%, #94c9ffb0)",
                             width: "50px",
                             margin: "auto"
@@ -60,7 +58,7 @@ function HomePage() {
                             }}
                         ></HomeCard> */}
                         <HomeCard
-                            style = {{
+                            style={{
                                 justifyContent: "center",
                                 alignItems: "center",
                             }}
@@ -68,7 +66,7 @@ function HomePage() {
                             <p className="text-black text-lg">Coming Soon</p>
                         </HomeCard>
                         <HomeCard
-                            style = {{
+                            style={{
                                 justifyContent: "center",
                                 alignItems: "center",
                             }}
@@ -76,7 +74,7 @@ function HomePage() {
                             <p className="text-black text-lg">Coming Soon</p>
                         </HomeCard>
                         <HomeCard
-                            style = {{
+                            style={{
                                 justifyContent: "center",
                                 alignItems: "center",
                             }}
