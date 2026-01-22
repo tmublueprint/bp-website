@@ -47,7 +47,7 @@ function QCard({ question, answer, isLast = false }: QCardProps) {
                 </button>
             </div>
             )}
-            {!isLast && <hr className="w-full h-[0.5px] bg-[#b3b3b3] border-none my-6 mx-0" />}
+            {!isLast && <hr className="w-full h-[1px] bg-[#b3b3b3] border-none my-6 mx-0" />}
         </div>
     )
 }
