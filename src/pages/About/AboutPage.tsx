@@ -1,6 +1,7 @@
 import LeadershipCard from "../../components/AboutPage/LeadershipCard";
 import FaceCircle from "../../components/FaceCircle";
 import JoinTeamCard from "../../components/AboutPage/JoinTeamCard";
+import AlumniCompaniesCard from "../../components/AboutPage/AlumniCompaniesCard";
 import '../../assets/css/AboutPage.css';
 import '../../index.css';
 import Zach from '/src/assets/images/zach-pic.png';
@@ -63,6 +64,7 @@ function AboutPage() {
             <div id="aboutPage-cards-container">
                 {cards}
             </div></div>
+            <AlumniCompaniesCard />
             <div id="aboutPage-join-card-container">
                 <JoinTeamCard />
             </div>

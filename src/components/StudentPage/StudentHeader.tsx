@@ -17,7 +17,7 @@ function StudentHeader() {
                         background: "linear-gradient(90deg, #94c9ff, #76b7fb, #489cf4, #2788f0, #137ced, #0c78ec)",
                         color: "white"
                     }}
-                    to="https://concise-barberry-ea8.notion.site/Blueprint-Role-Descriptions-2d905764f56381bb81c5d59ad46d7de2"
+                    to="https://concise-barberry-ea8.notion.site/f2d05764f563836da31e0178db6c4d7e"
                 />
             </div>
         </div>

@@ -1,4 +1,7 @@
 import GenericButton from "../../components/GenericButton";
+import ProjectCard from "../../components/Projects/ProjectCard";
+import SquirrelImage from "/src/assets/images/squirrel.jpg";
+import RaccoonImage from "/src/assets/images/resue_raccoon.jpg";
 import '/src/assets/css/ProjectPage.css';
 
 function ProjectPage() {
@@ -21,12 +24,31 @@ function ProjectPage() {
                 </div>
             </div>
 
-            <div className="w-full max-w-[644.6px] px-4 flex flex-col items-center mx-auto gap-[100px] md:gap-[144.3px]">
-                <div className="text-center flex flex-col items-center mt-[100px] md:mt-[142.2px] w-full max-w-[600px]">
-                    <h1 className="text-[40px] font-bold text-[55.3px] mb-[13.7px] text-[#333] opacity-50">Coming Soon...</h1>
-                    <p className="text-[16px] text-[17.3px]">We're currently in the early stages of our 2025–2026 cycle and haven't launched any projects just yet,
-                        but they're on the way. Check back soon to see the exciting work our teams will be bringing to life throughout the year!</p>
+            <div id="projectPage-cards-container">
+                <div id="itty-bitty-critter" className="project-card-wrapper">
+                    <h2 className="project-card-title">Itty Bitty Critter</h2>
+                    <ProjectCard 
+                        npoName="About the NPO"
+                        npoDescription="Itty Bitty Critter is a nonprofit dedicated to rescuing and rehabilitating small animals in need. They work to provide shelter, medical care, and find loving forever homes for animals of all sizes."
+                        solution="We built them their own website and integrated with it a blog, additionally we also built a personal content management system allowing the NPO admins to manage their own content."
+                        bannerImage={SquirrelImage}
+                        githubUrl="https://github.com/tmublueprint/bp-ibc"
+                    />
                 </div>
+                <div id="furever" className="project-card-wrapper">
+                    <h2 className="project-card-title">Furever</h2>
+                    <ProjectCard 
+                        npoName="About the NPO"
+                        npoDescription="Furever is a nonprofit that rescues and rehabilitates orphaned, injured, sick, and displaced wildlife, aiming to return them to their natural habitat. They are licensed by Ontario's Ministry of Natural Resources & Forestry."
+                        solution="We built them a website that helps direct visitors to the right resources and information for wildlife rescue and rehabilitation. These include a wildlife emergency hotline, a wildlife rehabilitation guide, volunteering support and an embedded educational resource."
+                        bannerImage={RaccoonImage}
+                        githubUrl="https://github.com/tmublueprint/bp-furever"
+                        websiteUrl="https://www.fureverwildrehabilitation.ca/"
+                    />
+                </div>
+            </div>
+
+            <div className="text-center w-full max-w-[644.6px] px-4 flex flex-col items-center mx-auto mt-[80px] md:mt-[120px]">
                 <div className="text-center w-full">
                     <h1 className="text-[40px] font-bold text-[55.3px] text-[#333]">Partner with Us</h1>
                     <p className="text-[16px] text-[17.3px] text-[#333]">

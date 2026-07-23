@@ -15,6 +15,9 @@ import WelcomeCard from "../components/HomePage/WelcomeCard";
 import '../index.css';
 import '../assets/css/HomePage.css';
 import PeopleVectors from "../assets/images/people-vectors.svg";
+import ProjectImage from "/src/assets/images/project.jpg";
+import SquirrelRehabImage from "/src/assets/images/squirrel_rehab.jpg";
+import { Link } from "react-router-dom";
 
 
 function HomePage() {
@@ -50,29 +53,44 @@ function HomePage() {
                 </div>
                 <div id="homePage-scroll-container">
                     <div id="homePage-card-container">
-                        {/* <HomeCard 
-                            style = {{
-                                background: "transparent",
-                                border: "0px",
-                                boxShadow: "none",
-                            }}
-                        ></HomeCard> */}
-                        <HomeCard
-                            style={{
-                                justifyContent: "center",
-                                alignItems: "center",
-                            }}
-                        >
-                            <p className="text-black text-lg">Coming Soon</p>
-                        </HomeCard>
-                        <HomeCard
-                            style={{
-                                justifyContent: "center",
-                                alignItems: "center",
-                            }}
-                        >
-                            <p className="text-black text-lg">Coming Soon</p>
-                        </HomeCard>
+                        <Link to="/project#itty-bitty-critter" style={{ textDecoration: "none" }}>
+                            <HomeCard
+                                style={{
+                                    backgroundImage: `url(${SquirrelRehabImage})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    position: "relative",
+                                    cursor: "pointer",
+                                }}
+                            >
+                                <div style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    background: "linear-gradient(to top, rgba(0,0,0,0.7), transparent)",
+                                    borderRadius: "24px",
+                                }}></div>
+                                <p className="text-white text-lg font-semibold" style={{ position: "relative", zIndex: 1, alignSelf: "flex-end", padding: "20px" }}>Itty Bitty Critter</p>
+                            </HomeCard>
+                        </Link>
+                        <Link to="/project#furever" style={{ textDecoration: "none" }}>
+                            <HomeCard
+                                style={{
+                                    backgroundImage: `url(${ProjectImage})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    position: "relative",
+                                    cursor: "pointer",
+                                }}
+                            >
+                                <div style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    background: "linear-gradient(to top, rgba(0,0,0,0.7), transparent)",
+                                    borderRadius: "24px",
+                                }}></div>
+                                <p className="text-white text-lg font-semibold" style={{ position: "relative", zIndex: 1, alignSelf: "flex-end", padding: "20px" }}>Furever</p>
+                            </HomeCard>
+                        </Link>
                         <HomeCard
                             style={{
                                 justifyContent: "center",
