@@ -69,7 +69,7 @@ function HomePage() {
                                     background: "linear-gradient(to top, rgba(0,0,0,0.7), transparent)",
                                     borderRadius: "24px",
                                 }}></div>
-                                <p className="text-white text-lg font-semibold" style={{ position: "relative", zIndex: 1, alignSelf: "flex-end", padding: "20px" }}>Itty Bitty Critters Wildlife Rehabilitation</p>
+                                <p className="text-white text-base font-semibold" style={{ position: "relative", zIndex: 1, alignSelf: "flex-end", padding: "20px", paddingBottom: "28px", lineHeight: "1.3" }}>Itty Bitty Critters Wildlife Rehabilitation</p>
                             </HomeCard>
                         </Link>
                         <Link to="/project#furever" style={{ textDecoration: "none" }}>
