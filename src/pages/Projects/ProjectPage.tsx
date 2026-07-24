@@ -26,7 +26,7 @@ function ProjectPage() {
 
             <div id="projectPage-cards-container">
                 <div id="itty-bitty-critter" className="project-card-wrapper">
-                    <h2 className="project-card-title">Itty Bitty Critter</h2>
+                    <h2 className="project-card-title">Itty Bitty Critters Wildlife Rehabilitation</h2>
                     <ProjectCard 
                         npoName="About the NPO"
                         npoDescription="Itty Bitty Critter is a nonprofit dedicated to rescuing and rehabilitating small animals in need. They work to provide shelter, medical care, and find loving forever homes for animals of all sizes."
@@ -36,7 +36,7 @@ function ProjectPage() {
                     />
                 </div>
                 <div id="furever" className="project-card-wrapper">
-                    <h2 className="project-card-title">Furever</h2>
+                    <h2 className="project-card-title">Fur-Ever Wild Rehabilitation</h2>
                     <ProjectCard 
                         npoName="About the NPO"
                         npoDescription="Furever is a nonprofit that rescues and rehabilitates orphaned, injured, sick, and displaced wildlife, aiming to return them to their natural habitat. They are licensed by Ontario's Ministry of Natural Resources & Forestry."
